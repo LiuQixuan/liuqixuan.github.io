@@ -134,7 +134,7 @@ function initLive2d (){
         }else{
             $('.hide-button').text('隐藏');
             $('.hide-button').attr('id','hide-act');
-            $('#landlord-wrapper').delay(1500).fadeIn(600);
+            $('#landlord-wrapper').delay(500).fadeIn(600);
         }
     })
     $('#landlord').hover(() => {
