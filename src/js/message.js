@@ -28,8 +28,8 @@ re.toString = function() {
 };
 
 $(document).on('copy', function (){
-    showMessage('你都复制了些什么呀~', 3000);
-    showMessage('转载要记得加上出处哦~~', 4000);
+    showMessage('你都复制了些什么呀~', 2500);
+    setTimeout(()=>{showMessage('转载要记得加上出处哦~~', 2500);},2500);
 });
 
 function initTips(){
@@ -126,13 +126,21 @@ function hideMessage(timeout){
 }
 
 function initLive2d (){
-    $('.hide-button').fadeOut(0).on('click', () => {
-        $('#landlord').css('display', 'none')
+    $('.hide-button').on('click', () => {
+        if ($('.hide-button').attr('id') == 'hide-act') {
+            $('.hide-button').text('显示');
+            $('.hide-button').attr('id','show-act');
+            $('#landlord-wrapper').fadeOut(600);
+        }else{
+            $('.hide-button').text('隐藏');
+            $('.hide-button').attr('id','hide-act');
+            $('#landlord-wrapper').delay(1500).fadeIn(600);
+        }
     })
     $('#landlord').hover(() => {
-        $('.hide-button').fadeIn(600)
+        $('#hide-act').fadeIn(600)
     }, () => {
-        $('.hide-button').fadeOut(600)
+        $('#hide-act').fadeOut(600)
     })
 }
 initLive2d ();
