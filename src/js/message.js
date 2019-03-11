@@ -20,7 +20,7 @@ String.prototype.renderTip = function (context) {
     return renderTip(this, context);
 };
 
-var re = /x/;
+var re = '讨厌啦，不要偷看人家的秘密啦~~~ ＞ω＜';
 console.log(re);
 re.toString = function() {
     showMessage('你打开控制台，是想偷看我的秘密吗？', 5000);
