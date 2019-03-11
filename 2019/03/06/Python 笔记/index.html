@@ -5,14 +5,14 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="dns-prefetch" href="http://yoursite.com">
+  <link rel="dns-prefetch" href="https://liuqixuan.github.io">
   <title>Python 进阶笔记 | LiuQixuan&#39;Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Python 进阶学习笔记 当年学了点Python2 ，那时候听说什么Python3 失去了Python的灵魂，就没管Python3 。 最近因为项目需要使用Python3，又把当年的那份热血花在了Python3的学习上。 本以为Python3只是Python2 的升级会很好上手，没想到Python3相对于Python2而言有太多的新语法、新概念。 从小养成学习记笔记的好习惯，把学习遇到的重点写下">
 <meta name="keywords" content="Python,advancement,notebook">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python 进阶笔记">
-<meta property="og:url" content="http://yoursite.com/2019/03/06/Python 笔记/index.html">
+<meta property="og:url" content="https://liuqixuan.github.io/2019/03/06/Python 笔记/index.html">
 <meta property="og:site_name" content="LiuQixuan&#39;Blog">
 <meta property="og:description" content="Python 进阶学习笔记 当年学了点Python2 ，那时候听说什么Python3 失去了Python的灵魂，就没管Python3 。 最近因为项目需要使用Python3，又把当年的那份热血花在了Python3的学习上。 本以为Python3只是Python2 的升级会很好上手，没想到Python3相对于Python2而言有太多的新语法、新概念。 从小养成学习记笔记的好习惯，把学习遇到的重点写下">
 <meta property="og:locale" content="default">
@@ -682,7 +682,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/03/06/Python 笔记/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://liuqixuan.github.io/2019/03/06/Python 笔记/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -749,22 +749,27 @@
   
 
   
-  <div id="gitment-ctn"></div> 
+
+  
+  <div id="gitalk-container"></div>
 <link rel="stylesheet" href="/./src/css/gitalk.css">
-<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script src="/./src/js/gitalk.min.js"></script>
 <script>
-var gitment = new Gitment({
-  id: "http://yoursite.com/2019/03/06/Python 笔记/",
+const gitalk = new Gitalk({
+  clientID: '44bbc30d1559eaf09ffe',
+  clientSecret: '9ed586810b3b0ea338118330140574e92aa7b68e',
+  repo: 'liuqixuan.github.io',
   owner: 'LiuQixuan',
-  repo: 'BlogGitalk',
-  oauth: {
-    client_id: '44bbc30d1559eaf09ffe',
-    client_secret: 'a8bfd1d42d056289fe72ccf3afd73beda036ecd7',
-  },
+  admin: ['LiuQixuan'],
+  id: location.href,      // Ensure uniqueness and length less than 50
+  distractionFreeMode: false  // Facebook-like distraction free mode
 })
-gitment.render('gitment-ctn')
+
+gitalk.render('gitalk-container')
 </script>
   
+
+
 
 
           </div>

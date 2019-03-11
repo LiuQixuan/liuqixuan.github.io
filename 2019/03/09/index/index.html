@@ -5,12 +5,12 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="dns-prefetch" href="http://yoursite.com">
+  <link rel="dns-prefetch" href="https://liuqixuan.github.io">
   <title>Home Page | LiuQixuan&#39;Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="article">
 <meta property="og:title" content="Home Page">
-<meta property="og:url" content="http://yoursite.com/2019/03/09/index/index.html">
+<meta property="og:url" content="https://liuqixuan.github.io/2019/03/09/index/index.html">
 <meta property="og:site_name" content="LiuQixuan&#39;Blog">
 <meta property="og:locale" content="default">
 <meta property="og:updated_time" content="2019-03-09T14:10:15.154Z">
@@ -257,7 +257,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/03/09/index/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://liuqixuan.github.io/2019/03/09/index/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -307,22 +307,27 @@
   
 
   
-  <div id="gitment-ctn"></div> 
+
+  
+  <div id="gitalk-container"></div>
 <link rel="stylesheet" href="/./src/css/gitalk.css">
-<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script src="/./src/js/gitalk.min.js"></script>
 <script>
-var gitment = new Gitment({
-  id: "http://yoursite.com/2019/03/09/index/",
+const gitalk = new Gitalk({
+  clientID: '44bbc30d1559eaf09ffe',
+  clientSecret: '9ed586810b3b0ea338118330140574e92aa7b68e',
+  repo: 'liuqixuan.github.io',
   owner: 'LiuQixuan',
-  repo: 'BlogGitalk',
-  oauth: {
-    client_id: '44bbc30d1559eaf09ffe',
-    client_secret: 'a8bfd1d42d056289fe72ccf3afd73beda036ecd7',
-  },
+  admin: ['LiuQixuan'],
+  id: location.href,      // Ensure uniqueness and length less than 50
+  distractionFreeMode: false  // Facebook-like distraction free mode
 })
-gitment.render('gitment-ctn')
+
+gitalk.render('gitalk-container')
 </script>
   
+
+
 
 
           </div>
