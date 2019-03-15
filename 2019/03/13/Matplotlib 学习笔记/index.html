@@ -6,19 +6,33 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://liuqixuan.github.io">
-  <title>Home Page | LiuQixuan&#39;Blog</title>
+  <title>Matplotlib 学习笔记 | LiuQixuan&#39;Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="欢迎访问我的个人Blog喜欢的话点下收藏或分享">
+  <meta name="description" content="MatplotlibMatplotlib 是Python2D绘图领域使用最广泛的套件。能导出多种格式的图片。 Matplotlib中文显示Matplotlib默认是不支持中文的，如果出现中文会以方框代替。  但是经过测试国外字体中部分可以支持。 12345678goodfont=[ &apos;Adobe Heiti Std&apos;, &apos;Arial Unicode MS&apos;, &apos;DengXian&apos;, &apos;SimHei">
+<meta name="keywords" content="python,Matplotlib,noteBook">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Home Page">
-<meta property="og:url" content="https://liuqixuan.github.io/2019/03/09/index/index.html">
+<meta property="og:title" content="Matplotlib 学习笔记">
+<meta property="og:url" content="https://liuqixuan.github.io/2019/03/13/Matplotlib 学习笔记/index.html">
 <meta property="og:site_name" content="LiuQixuan&#39;Blog">
-<meta property="og:description" content="欢迎访问我的个人Blog喜欢的话点下收藏或分享">
+<meta property="og:description" content="MatplotlibMatplotlib 是Python2D绘图领域使用最广泛的套件。能导出多种格式的图片。 Matplotlib中文显示Matplotlib默认是不支持中文的，如果出现中文会以方框代替。  但是经过测试国外字体中部分可以支持。 12345678goodfont=[ &apos;Adobe Heiti Std&apos;, &apos;Arial Unicode MS&apos;, &apos;DengXian&apos;, &apos;SimHei">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-13T11:22:08.216Z">
+<meta property="og:image" content="http://poatdt87z.bkt.clouddn.com/cn_erro.png">
+<meta property="og:image" content="http://poatdt87z.bkt.clouddn.com/line_cn.png">
+<meta property="og:image" content="http://poatdt87z.bkt.clouddn.com/line.png">
+<meta property="og:image" content="http://poatdt87z.bkt.clouddn.com/sin.png">
+<meta property="og:image" content="http://poatdt87z.bkt.clouddn.com/subplot.png">
+<meta property="og:image" content="http://poatdt87z.bkt.clouddn.com/bar.png">
+<meta property="og:image" content="http://poatdt87z.bkt.clouddn.com/np_histogram.png">
+<meta property="og:image" content="http://poatdt87z.bkt.clouddn.com/hist.png">
+<meta property="og:image" content="http://poatdt87z.bkt.clouddn.com/sin_cos_base.png">
+<meta property="og:image" content="http://poatdt87z.bkt.clouddn.com/sin_cos_legend.png">
+<meta property="og:image" content="http://poatdt87z.bkt.clouddn.com/sin_cos_coords.png">
+<meta property="og:image" content="http://poatdt87z.bkt.clouddn.com/sin_cos_better.png">
+<meta property="og:updated_time" content="2019-03-15T17:03:34.942Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Home Page">
-<meta name="twitter:description" content="欢迎访问我的个人Blog喜欢的话点下收藏或分享">
+<meta name="twitter:title" content="Matplotlib 学习笔记">
+<meta name="twitter:description" content="MatplotlibMatplotlib 是Python2D绘图领域使用最广泛的套件。能导出多种格式的图片。 Matplotlib中文显示Matplotlib默认是不支持中文的，如果出现中文会以方框代替。  但是经过测试国外字体中部分可以支持。 12345678goodfont=[ &apos;Adobe Heiti Std&apos;, &apos;Arial Unicode MS&apos;, &apos;DengXian&apos;, &apos;SimHei">
+<meta name="twitter:image" content="http://poatdt87z.bkt.clouddn.com/cn_erro.png">
   
     <link rel="alternative" href="/atom.xml" title="LiuQixuan&#39;Blog" type="application/atom+xml">
   
@@ -184,27 +198,239 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-index" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Matplotlib 学习笔记" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Home Page
+      Matplotlib 学习笔记
     </h1>
   
 
         
-        <a href="/2019/03/09/index/" class="archive-article-date">
-  	<time datetime="2019-03-09T13:54:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-09</time>
+        <a href="/2019/03/13/Matplotlib 学习笔记/" class="archive-article-date">
+  	<time datetime="2019-03-13T13:23:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-13</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="欢迎访问我的个人Blog"><a href="#欢迎访问我的个人Blog" class="headerlink" title="欢迎访问我的个人Blog"></a>欢迎访问我的个人Blog</h2><p><strong>喜欢的话点下收藏或分享</strong></p>
+        <h2 id="Matplotlib"><a href="#Matplotlib" class="headerlink" title="Matplotlib"></a>Matplotlib</h2><p>Matplotlib 是Python2D绘图领域使用最广泛的套件。能导出多种格式的图片。</p>
+<h3 id="Matplotlib中文显示"><a href="#Matplotlib中文显示" class="headerlink" title="Matplotlib中文显示"></a>Matplotlib中文显示</h3><p>Matplotlib默认是不支持中文的，如果出现中文会以方框代替。</p>
+<p><img src="http://poatdt87z.bkt.clouddn.com/cn_erro.png" alt="cn_error"></p>
+<p>但是经过测试国外字体中部分可以支持。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">goodfont=[</span><br><span class="line"> <span class="string">'Adobe Heiti Std'</span>,</span><br><span class="line"> <span class="string">'Arial Unicode MS'</span>,</span><br><span class="line"> <span class="string">'DengXian'</span>,</span><br><span class="line"> <span class="string">'SimHei'</span>,</span><br><span class="line"> <span class="string">'STKaiti'</span>,</span><br><span class="line"> <span class="string">'STXihei'</span>,</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<p>&lt;!_more__&gt;<br>使用fontproperties指定字体</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> matplotlib <span class="keyword">import</span> pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> matplotlib</span><br><span class="line">zh_cn_font = matplotlib.font_manager.FontProperties(fname=<span class="string">"F:\ProjectFiles\SimHei.ttf"</span>)</span><br><span class="line"><span class="comment">#第七行的作用是为了消除更换为unicode字体之后0、负数之类的显示异常。之后所有使用中文字体的地方只字符串都以u""的形式出现，并指定fontproperties属性为我们的指定的myfont就行了</span></span><br><span class="line">matplotlib.rcParams[<span class="string">'axes.unicode_minus'</span>] = <span class="literal">False</span></span><br><span class="line"><span class="comment">#matplotlib.rcParams['font.sans-serif'] = ['SimHei']</span></span><br><span class="line">x = np.arange(<span class="number">0</span>,<span class="number">9</span>)</span><br><span class="line">y = <span class="number">2</span>*x+<span class="number">1</span></span><br><span class="line">plt.title(<span class="string">u"Matplotlib 标题"</span>,fontproperties = zh_cn_font)</span><br><span class="line">plt.xlabel(<span class="string">u"x 轴:"</span>,fontproperties = zh_cn_font)</span><br><span class="line">plt.ylabel(<span class="string">u"y 轴:"</span>,fontproperties = zh_cn_font)</span><br><span class="line">plt.plot(x,y)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p><img src="http://poatdt87z.bkt.clouddn.com/line_cn.png" alt="ch_pic"></p>
+<h3 id="绘制一次方程"><a href="#绘制一次方程" class="headerlink" title="绘制一次方程"></a>绘制一次方程</h3><p>使用matplotlib中的pylot包进行简单绘图。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> matplotlib <span class="keyword">import</span> pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line">x = np.arange(<span class="number">0</span>,<span class="number">9</span>)</span><br><span class="line">y = <span class="number">2</span>*x+<span class="number">1</span></span><br><span class="line">plt.title(<span class="string">"Matplotlib Demo1"</span>)</span><br><span class="line">plt.xlabel(<span class="string">"x axis:"</span>)</span><br><span class="line">plt.ylabel(<span class="string">"y axis:"</span>)</span><br><span class="line">plt.plot(x,y)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p><img src="http://poatdt87z.bkt.clouddn.com/line.png" alt="demo1"></p>
+<h3 id="绘制离散图"><a href="#绘制离散图" class="headerlink" title="绘制离散图"></a>绘制离散图</h3><p>向pyplot的plot()函数添加特殊的格式化字符串可以显示离散值。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字符</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>&#39;-&#39;</code></td>
+<td style="text-align:left">实线样式</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;--&#39;</code></td>
+<td style="text-align:left">短横线样式</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;-.&#39;</code></td>
+<td style="text-align:left">点划线样式</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;:&#39;</code></td>
+<td style="text-align:left">虚线样式</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;.&#39;</code></td>
+<td style="text-align:left">点标记</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;,&#39;</code></td>
+<td style="text-align:left">像素标记</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;o&#39;</code></td>
+<td style="text-align:left">圆标记</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;v&#39;</code></td>
+<td style="text-align:left">倒三角标记</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;^&#39;</code></td>
+<td style="text-align:left">正三角标记</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;&amp;lt;&#39;</code></td>
+<td style="text-align:left">左三角标记</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;&amp;gt;&#39;</code></td>
+<td style="text-align:left">右三角标记</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;1&#39;</code></td>
+<td style="text-align:left">下箭头标记</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;2&#39;</code></td>
+<td style="text-align:left">上箭头标记</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;3&#39;</code></td>
+<td style="text-align:left">左箭头标记</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;4&#39;</code></td>
+<td style="text-align:left">右箭头标记</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;s&#39;</code></td>
+<td style="text-align:left">正方形标记</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;p&#39;</code></td>
+<td style="text-align:left">五边形标记</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;*&#39;</code></td>
+<td style="text-align:left">星形标记</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;h&#39;</code></td>
+<td style="text-align:left">六边形标记 1</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;H&#39;</code></td>
+<td style="text-align:left">六边形标记 2</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;+&#39;</code></td>
+<td style="text-align:left">加号标记</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;x&#39;</code></td>
+<td style="text-align:left">X 标记</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;D&#39;</code></td>
+<td style="text-align:left">菱形标记</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;d&#39;</code></td>
+<td style="text-align:left">窄菱形标记</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;&amp;#124;&#39;</code></td>
+<td style="text-align:left">竖直线标记</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;_&#39;</code></td>
+<td style="text-align:left">水平线标记</td>
+</tr>
+</tbody>
+</table>
+<p>以下是颜色的缩写：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字符</th>
+<th style="text-align:left">颜色</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>&#39;b&#39;</code></td>
+<td style="text-align:left">蓝色</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;g&#39;</code></td>
+<td style="text-align:left">绿色</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;r&#39;</code></td>
+<td style="text-align:left">红色</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;c&#39;</code></td>
+<td style="text-align:left">青色</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;m&#39;</code></td>
+<td style="text-align:left">品红色</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;y&#39;</code></td>
+<td style="text-align:left">黄色</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;k&#39;</code></td>
+<td style="text-align:left">黑色</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>&#39;w&#39;</code></td>
+<td style="text-align:left">白色</td>
+</tr>
+</tbody>
+</table>
+<p>例如：要显示圆来代表点，而不是上面示例中的线，请使用 ob 作为 plot() 函数中的格式字符串。</p>
+<h3 id="绘制正弦函数"><a href="#绘制正弦函数" class="headerlink" title="绘制正弦函数"></a>绘制正弦函数</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> matplotlib <span class="keyword">import</span> pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> matplotlib</span><br><span class="line">m = np.arange(<span class="number">0</span>,<span class="number">4</span>,<span class="number">0.1</span>)</span><br><span class="line">n = np.sin(m*np.pi)</span><br><span class="line">plt.title(<span class="string">u"Matplotlib 正弦函数"</span>)</span><br><span class="line">plt.xlabel(<span class="string">u"x 轴:"</span>)</span><br><span class="line">plt.ylabel(<span class="string">u"y 轴:"</span>)</span><br><span class="line">plt.plot(m,n,<span class="string">'-'</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p><img src="http://poatdt87z.bkt.clouddn.com/sin.png" alt="sin"></p>
+<h3 id="绘制子图"><a href="#绘制子图" class="headerlink" title="绘制子图"></a>绘制子图</h3><p><code>pyplot.subplot(nrows,ncols,index)</code>可以在一个figure中添加多个子图像。</p>
+<p>使用<code>plt.subtiltle(&#39;&#39;)</code>给整个figure添加标题，使用plt.title(‘’)给每个subplot添加子标题，修改x轴范围使用plt.xlim(min,max)，修改x轴刻度使用plt.xticks([numlist],[textlist])。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> matplotlib <span class="keyword">import</span> pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> matplotlib</span><br><span class="line">x = np.arange(<span class="number">0</span>,<span class="number">3</span>,<span class="number">0.05</span>)</span><br><span class="line">n = np.linspace(-np.pi/<span class="number">2</span>,np.pi/<span class="number">2</span>,<span class="number">50</span>)</span><br><span class="line">y = np.sin(x*np.pi)</span><br><span class="line">z = np.cos(x*np.pi)</span><br><span class="line">p = np.tan(n)</span><br><span class="line">q = np.tan(np.pi/<span class="number">2</span>-n)</span><br><span class="line"></span><br><span class="line">plt.figure(figsize = (<span class="number">16</span>,<span class="number">9</span>),dpi = <span class="number">80</span>)</span><br><span class="line"></span><br><span class="line">plt.suptitle(<span class="string">'Matplotlib 绘制多图'</span>,fontsize = <span class="number">40</span>,weight = <span class="number">40</span>)</span><br><span class="line"></span><br><span class="line">plt.subplot(<span class="number">2</span>,<span class="number">2</span>,<span class="number">1</span>)</span><br><span class="line">plt.title(<span class="string">u"正弦函数"</span>)</span><br><span class="line">plt.xlabel(<span class="string">u"x 轴:"</span>)</span><br><span class="line">plt.ylabel(<span class="string">u"y 轴:"</span>)</span><br><span class="line">plt.plot(x,y,<span class="string">'-'</span>,label = <span class="string">'sine'</span>)</span><br><span class="line"></span><br><span class="line">plt.subplot(<span class="number">2</span>, <span class="number">2</span>, <span class="number">2</span>)</span><br><span class="line">plt.title(<span class="string">u"余弦函数"</span>)</span><br><span class="line">plt.xlabel(<span class="string">u"x 轴:"</span>)</span><br><span class="line">plt.ylabel(<span class="string">u"y 轴:"</span>)</span><br><span class="line">plt.plot(x,z,<span class="string">'-'</span>,label = <span class="string">'cosine'</span>)</span><br><span class="line"></span><br><span class="line">plt.subplot(<span class="number">2</span>, <span class="number">2</span>, <span class="number">3</span>)</span><br><span class="line">plt.xlim(n.min()*<span class="number">1.1</span>,n.max()*<span class="number">1.1</span>)</span><br><span class="line">plt.xticks([-np.pi/<span class="number">2</span>,-np.pi/<span class="number">4</span>,<span class="number">0</span>,np.pi/<span class="number">4</span>,np.pi/<span class="number">2</span>],[<span class="string">r'$-\pi/2$'</span>,<span class="string">r'$-\pi/4$'</span>,<span class="string">r'$0$'</span>,<span class="string">r'$\pi/4$'</span>,<span class="string">r'$\pi/2$'</span>])</span><br><span class="line">plt.ylim(<span class="number">-10</span>,<span class="number">10</span>)</span><br><span class="line">plt.title(<span class="string">u"正切函数"</span>)</span><br><span class="line">plt.xlabel(<span class="string">u"x 轴:"</span>)</span><br><span class="line">plt.ylabel(<span class="string">u"y 轴:"</span>)</span><br><span class="line">plt.plot(n,p,<span class="string">'-'</span>,label = <span class="string">'tan'</span>)</span><br><span class="line"></span><br><span class="line">plt.subplot(<span class="number">2</span>, <span class="number">2</span>, <span class="number">4</span>)</span><br><span class="line">plt.xlim(n.min()*<span class="number">1.1</span>,n.max()*<span class="number">1.1</span>)</span><br><span class="line">plt.xticks([-np.pi/<span class="number">2</span>,-np.pi/<span class="number">4</span>,<span class="number">0</span>,np.pi/<span class="number">4</span>,np.pi/<span class="number">2</span>],[<span class="string">r'$-\pi/2$'</span>,<span class="string">r'$-\pi/4$'</span>,<span class="string">r'$0$'</span>,<span class="string">r'$\pi/4$'</span>,<span class="string">r'$\pi/2$'</span>])</span><br><span class="line">plt.ylim(<span class="number">-10</span>,<span class="number">10</span>)</span><br><span class="line">plt.title(<span class="string">u"余弦函数"</span>)</span><br><span class="line">plt.xlabel(<span class="string">u"x 轴:"</span>)</span><br><span class="line">plt.ylabel(<span class="string">u"y 轴:"</span>)</span><br><span class="line">plt.plot(n,q,<span class="string">'-'</span>,label = <span class="string">'cotan'</span>)</span><br><span class="line"></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p><img src="http://poatdt87z.bkt.clouddn.com/subplot.png" alt="绘制子图"></p>
+<h3 id="绘制条形图"><a href="#绘制条形图" class="headerlink" title="绘制条形图"></a>绘制条形图</h3><p><code>plt,bar(x,y,width = 0.8,align = &#39;cemter&#39;,color = &#39;r&#39;)</code></p>
+<p>x 为x值的列表，y为y值的列表，width宽度</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> matplotlib <span class="keyword">import</span> pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> matplotlib</span><br><span class="line">plt.figure(figsize=(<span class="number">16</span>,<span class="number">9</span>),dpi = <span class="number">80</span>)</span><br><span class="line">plt.title(<span class="string">'条形图绘制'</span>,fontsize = <span class="number">40</span>)</span><br><span class="line">xlist = [<span class="number">10</span>,<span class="number">20</span>,<span class="number">30</span>,<span class="number">40</span>,<span class="number">50</span>]</span><br><span class="line">ylist = [<span class="number">5</span>,<span class="number">15</span>,<span class="number">10</span>,<span class="number">50</span>,<span class="number">45</span>]</span><br><span class="line">plt.bar(xlist,ylist,width = <span class="number">5</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p><img src="http://poatdt87z.bkt.clouddn.com/bar.png" alt="条形图"></p>
+<p><code>numpy.histogram(ndarray,bins = [])</code>自动区间分组计数器</p>
+<ul>
+<li>bins:分组区间</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">plt.figure(figsize = (<span class="number">16</span>,<span class="number">9</span>),dpi = <span class="number">80</span>)</span><br><span class="line">plt.title(<span class="string">'使用Histogram自动分组计数'</span>,fontsize = <span class="number">30</span>)</span><br><span class="line">plt.xlabel(<span class="string">'分数区间'</span>)</span><br><span class="line">plt.ylabel(<span class="string">'人数'</span>)</span><br><span class="line"></span><br><span class="line">data = [<span class="number">86</span>,<span class="number">62</span>,<span class="number">55</span>,<span class="number">42</span>,<span class="number">98</span>,<span class="number">45</span>,<span class="number">58</span>,<span class="number">60</span>,<span class="number">75</span>,<span class="number">79</span>,<span class="number">82</span>,<span class="number">85</span>,<span class="number">72</span>,<span class="number">77</span>,<span class="number">32</span>]</span><br><span class="line">rank,bins = np.histogram(data,[<span class="number">0</span>,<span class="number">10</span>,<span class="number">20</span>,<span class="number">30</span>,<span class="number">40</span>,<span class="number">50</span>,<span class="number">60</span>,<span class="number">70</span>,<span class="number">80</span>,<span class="number">90</span>,<span class="number">100</span>])</span><br><span class="line">plt.xticks(bins)</span><br><span class="line">plt.xlim(bins.min(),bins.max())</span><br><span class="line">rects = plt.bar(bins[:len(bins)<span class="number">-1</span>],rank,width = <span class="number">6</span>,align = <span class="string">'edge'</span>,)</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">autolabe</span><span class="params">(rects)</span>:</span></span><br><span class="line">	<span class="keyword">for</span> rect <span class="keyword">in</span> rects:</span><br><span class="line">		y = rect.get_height()</span><br><span class="line">		x = rect.get_x()</span><br><span class="line">		print(x,<span class="string">'\t'</span>,y)</span><br><span class="line">		plt.text(x+<span class="number">3</span>,y+<span class="number">0.05</span>,<span class="string">'&#123;&#125;'</span>.format(y),color = <span class="string">'b'</span>,fontsize = <span class="number">20</span>,ha = <span class="string">'center'</span>)</span><br><span class="line">autolabe(rects)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p><img src="http://poatdt87z.bkt.clouddn.com/np_histogram.png" alt="Histogram 自动分组计数"></p>
+<p><code>matplotlib.pyplot.hist()</code>可以轻松解决上面的复杂过程。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> matplotlib <span class="keyword">import</span> pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> matplotlib</span><br><span class="line">plt.figure(figsize = (<span class="number">16</span>,<span class="number">9</span>),dpi = <span class="number">80</span>)</span><br><span class="line">plt.title(<span class="string">'使用Histogram自动分组计数'</span>,fontsize = <span class="number">30</span>)</span><br><span class="line">plt.xlabel(<span class="string">'分数区间'</span>)</span><br><span class="line">plt.ylabel(<span class="string">'人数'</span>)</span><br><span class="line">bins = np.array([<span class="number">0</span>,<span class="number">10</span>,<span class="number">20</span>,<span class="number">30</span>,<span class="number">40</span>,<span class="number">50</span>,<span class="number">60</span>,<span class="number">70</span>,<span class="number">80</span>,<span class="number">90</span>,<span class="number">100</span>])</span><br><span class="line">plt.xticks(bins)</span><br><span class="line">plt.xlim(bins.min(),bins.max())</span><br><span class="line">data = np.array([<span class="number">86</span>,<span class="number">62</span>,<span class="number">55</span>,<span class="number">42</span>,<span class="number">98</span>,<span class="number">45</span>,<span class="number">58</span>,<span class="number">60</span>,<span class="number">75</span>,<span class="number">79</span>,<span class="number">82</span>,<span class="number">85</span>,<span class="number">72</span>,<span class="number">77</span>,<span class="number">32</span>])</span><br><span class="line">plt.hist(data,bins = bins,width = <span class="number">6</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p><img src="http://poatdt87z.bkt.clouddn.com/hist.png" alt="hist(ndarray,bins)生成条形图"></p>
+<h3 id="绘制饼图"><a href="#绘制饼图" class="headerlink" title="绘制饼图"></a>绘制饼图</h3><h3 id="绘制一个完整的线型图"><a href="#绘制一个完整的线型图" class="headerlink" title="绘制一个完整的线型图"></a>绘制一个完整的线型图</h3><ol>
+<li><p>首先先汇出正弦和余弦函数各一个周期。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> matplotlib <span class="keyword">import</span> pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> matplotlib</span><br><span class="line">plt.figure(figsize = (<span class="number">16</span>,<span class="number">9</span>),dpi = <span class="number">80</span>)</span><br><span class="line">plt.title(<span class="string">'绘制正余弦函数'</span>,fontsize = <span class="number">30</span>)</span><br><span class="line">x = np.linspace(<span class="number">0</span>,<span class="number">2</span>*np.pi,<span class="number">256</span>)</span><br><span class="line">y1 = np.sin(x)</span><br><span class="line">y2 = np.cos(x)</span><br><span class="line">plt.ylim(y1.min()*<span class="number">1.1</span>,y1.max()*<span class="number">1.1</span>)</span><br><span class="line">plt.xlim(x.min()*<span class="number">1.1</span>,x.max()*<span class="number">1.1</span>)</span><br><span class="line">plt.xticks([<span class="number">0</span>,np.pi/<span class="number">4</span>,np.pi/<span class="number">2</span>,np.pi*<span class="number">3</span>/<span class="number">4</span>,np.pi,np.pi*<span class="number">5</span>/<span class="number">4</span>,np.pi*<span class="number">3</span>/<span class="number">2</span>,np.pi*<span class="number">7</span>/<span class="number">4</span>,np.pi*<span class="number">2</span>],\</span><br><span class="line">			[<span class="string">r'$0$'</span>,<span class="string">r'$\frac&#123;1&#125;&#123;4&#125;\pi$'</span>,<span class="string">r'$\frac&#123;1&#125;&#123;2&#125;\pi$'</span>,<span class="string">r'$\frac&#123;3&#125;&#123;4&#125;\pi$'</span>,<span class="string">r'$\pi$'</span>,\</span><br><span class="line">			<span class="string">r'$\frac&#123;5&#125;&#123;4&#125;\pi$'</span>,<span class="string">r'$\frac&#123;3&#125;&#123;2&#125;\pi$'</span>,<span class="string">r'$\frac&#123;7&#125;&#123;4&#125;\pi$'</span>,<span class="string">r'$2\pi$'</span>,])</span><br><span class="line">plt.plot(x,y1,<span class="string">'-b'</span>,linewidth = <span class="number">2</span>)</span><br><span class="line">plt.plot(x,y2,<span class="string">'-r'</span>,linewidth = <span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p><img src="http://poatdt87z.bkt.clouddn.com/sin_cos_base.png" alt="绘制正余弦函数Base"></p>
+<p>​    图片绘制出来看起来非常平滑，非常美。虽然大体的图像已经绘制出来了，但是作为一个科学绘图库这点只是皮毛。接下来要给图像增加更多元素，使之看起来更完美。</p>
+<ol start="2">
+<li><p>添加图例</p>
+<p>使用<code>plt.legend(loc = (upper,left),frameon = True,framealpha = 0.7)</code>给图片添加图例。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> matplotlib <span class="keyword">import</span> pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> matplotlib</span><br><span class="line">plt.figure(figsize = (<span class="number">16</span>,<span class="number">9</span>),dpi = <span class="number">80</span>)</span><br><span class="line">plt.title(<span class="string">'绘制正余弦函数'</span>,fontsize = <span class="number">30</span>)</span><br><span class="line">x = np.linspace(<span class="number">0</span>,<span class="number">2</span>*np.pi,<span class="number">256</span>)</span><br><span class="line">y1 = np.sin(x)</span><br><span class="line">y2 = np.cos(x)</span><br><span class="line">plt.ylim(y1.min()*<span class="number">1.1</span>,y1.max()*<span class="number">1.1</span>)</span><br><span class="line">plt.xlim(x.min()*<span class="number">1.1</span>,x.max()*<span class="number">1.1</span>)</span><br><span class="line">plt.xticks([<span class="number">0</span>,np.pi/<span class="number">4</span>,np.pi/<span class="number">2</span>,np.pi*<span class="number">3</span>/<span class="number">4</span>,np.pi,np.pi*<span class="number">5</span>/<span class="number">4</span>,np.pi*<span class="number">3</span>/<span class="number">2</span>,np.pi*<span class="number">7</span>/<span class="number">4</span>,np.pi*<span class="number">2</span>],\</span><br><span class="line">			[<span class="string">r'$0$'</span>,<span class="string">r'$\frac&#123;1&#125;&#123;4&#125;\pi$'</span>,<span class="string">r'$\frac&#123;1&#125;&#123;2&#125;\pi$'</span>,<span class="string">r'$\frac&#123;3&#125;&#123;4&#125;\pi$'</span>,<span class="string">r'$\pi$'</span>,\</span><br><span class="line">			<span class="string">r'$\frac&#123;5&#125;&#123;4&#125;\pi$'</span>,<span class="string">r'$\frac&#123;3&#125;&#123;2&#125;\pi$'</span>,<span class="string">r'$\frac&#123;7&#125;&#123;4&#125;\pi$'</span>,<span class="string">r'$2\pi$'</span>,])</span><br><span class="line">plt.plot(x,y1,<span class="string">'-b'</span>,linewidth = <span class="number">2</span>, label = <span class="string">'sine'</span>)</span><br><span class="line">plt.plot(x,y2,<span class="string">'-r'</span>,linewidth = <span class="number">2</span>, label = <span class="string">'cosine'</span> )</span><br><span class="line">plt.legend(loc = <span class="string">'upper left'</span>,frameon = <span class="literal">True</span>,framealpha = <span class="number">0.7</span>)</span><br><span class="line"> </span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p><img src="http://poatdt87z.bkt.clouddn.com/sin_cos_legend.png" alt="legend"></p>
+</li>
+<li><p>调整坐标轴原点使其与图像中心对齐</p>
+<p>坐标轴线和上面的记号连在一起就形成了脊柱（Spines）</p>
+<p>在matplotlib的定义中一个图像有四条脊柱，我们为了实现目标，必须把上和右的spines置为无色，然后把左和下的spines调整到合适的位置。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ax = plt.gca()</span><br><span class="line">ax.spines[<span class="string">'top'</span>].set_color(<span class="string">'none'</span>)</span><br><span class="line">ax.spines[<span class="string">'right'</span>].set_color(<span class="string">'none'</span>)</span><br><span class="line">ax.spines[<span class="string">'bottom'</span>].set_position((<span class="string">'data'</span>,<span class="number">0</span>))</span><br><span class="line">ax.spines[<span class="string">'left'</span>].set_position((<span class="string">'data'</span>,<span class="number">0</span>))</span><br></pre></td></tr></table></figure>
+<p><img src="http://poatdt87z.bkt.clouddn.com/sin_cos_coords.png" alt="sin_cos_coords"></p>
+</li>
+<li><p>添加锚点和虚线，添加标注</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> matplotlib <span class="keyword">import</span> pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> matplotlib</span><br><span class="line">plt.figure(figsize = (<span class="number">16</span>,<span class="number">9</span>),dpi = <span class="number">80</span>)</span><br><span class="line">plt.title(<span class="string">'绘制正余弦函数'</span>,fontsize = <span class="number">40</span>,va = <span class="string">'bottom'</span>)</span><br><span class="line">x = np.linspace(-np.pi,<span class="number">2</span>*np.pi,<span class="number">384</span>)</span><br><span class="line">y1 = np.sin(x)</span><br><span class="line">y2 = np.cos(x)</span><br><span class="line"></span><br><span class="line">plt.ylim(y1.min()*<span class="number">1.1</span>,y1.max()*<span class="number">1.1</span>)</span><br><span class="line">plt.xlim(x.min()*<span class="number">1.1</span>,x.max()*<span class="number">1.1</span>)</span><br><span class="line">plt.xticks([-np.pi,-np.pi*<span class="number">3</span>/<span class="number">4</span>,-np.pi/<span class="number">2</span>,-np.pi/<span class="number">4</span>,<span class="number">0</span>,np.pi/<span class="number">4</span>,np.pi/<span class="number">2</span>,np.pi*<span class="number">3</span>/<span class="number">4</span>,np.pi,np.pi*<span class="number">5</span>/<span class="number">4</span>,np.pi*<span class="number">3</span>/<span class="number">2</span>,np.pi*<span class="number">7</span>/<span class="number">4</span>,np.pi*<span class="number">2</span>],\</span><br><span class="line">			[<span class="string">r'$-\pi$'</span>,<span class="string">r'$-\frac&#123;3&#125;&#123;4&#125;\pi$'</span>,<span class="string">r'$-\frac&#123;1&#125;&#123;2&#125;\pi$'</span>,<span class="string">r'$-\frac&#123;1&#125;&#123;4&#125;\pi$'</span>,<span class="string">r'$0$'</span>,<span class="string">r'$\frac&#123;1&#125;&#123;4&#125;\pi$'</span>,<span class="string">r'$\frac&#123;1&#125;&#123;2&#125;\pi$'</span>,<span class="string">r'$\frac&#123;3&#125;&#123;4&#125;\pi$'</span>,<span class="string">r'$\pi$'</span>,\</span><br><span class="line">			<span class="string">r'$\frac&#123;5&#125;&#123;4&#125;\pi$'</span>,<span class="string">r'$\frac&#123;3&#125;&#123;2&#125;\pi$'</span>,<span class="string">r'$\frac&#123;7&#125;&#123;4&#125;\pi$'</span>,<span class="string">r'$2\pi$'</span>,],fontsize = <span class="number">20</span>)</span><br><span class="line">plt.yticks(np.arange(<span class="number">-1</span>,<span class="number">1</span>,<span class="number">0.25</span>),np.arange(<span class="number">-1</span>,<span class="number">1</span>,<span class="number">0.25</span>),fontsize = <span class="number">20</span>)</span><br><span class="line"></span><br><span class="line">ax = plt.gca()</span><br><span class="line">ax.spines[<span class="string">'top'</span>].set_color(<span class="string">'none'</span>)</span><br><span class="line">ax.spines[<span class="string">'right'</span>].set_color(<span class="string">'none'</span>)</span><br><span class="line">ax.spines[<span class="string">'bottom'</span>].set_position((<span class="string">'data'</span>,<span class="number">0</span>))</span><br><span class="line">ax.spines[<span class="string">'left'</span>].set_position((<span class="string">'data'</span>,<span class="number">0</span>))</span><br><span class="line"></span><br><span class="line">plt.plot(x,y1,<span class="string">'-b'</span>,linewidth = <span class="number">2</span>, label = <span class="string">'sine'</span>)</span><br><span class="line">plt.plot(x,y2,<span class="string">'-r'</span>,linewidth = <span class="number">2</span>, label = <span class="string">'cosine'</span> )</span><br><span class="line">plt.legend(loc = <span class="string">'upper left'</span>,frameon = <span class="literal">True</span>,framealpha = <span class="number">0.7</span>,fontsize = <span class="number">14</span>)</span><br><span class="line"></span><br><span class="line">t = np.pi*<span class="number">3</span>/<span class="number">4</span></span><br><span class="line">plt.plot([t,t],[np.sin(t),<span class="number">0</span>],<span class="string">'--b'</span>,linewidth = <span class="number">2</span>)</span><br><span class="line">plt.scatter(t,np.sin(t),<span class="number">50</span>,color = <span class="string">'b'</span>)</span><br><span class="line">plt.annotate(<span class="string">r'$\sin(\frac&#123;3\pi&#125;&#123;4&#125;)=\frac&#123;\sqrt&#123;2&#125;&#125;&#123;2&#125;$'</span>,(t,np.sin(t)),ha = <span class="string">'left'</span>,xytext = (+<span class="number">50</span>,+<span class="number">30</span>), xycoords = <span class="string">'data'</span>,\</span><br><span class="line">	textcoords=<span class="string">'offset points'</span>,fontsize = <span class="number">16</span>, arrowprops = dict(arrowstyle = <span class="string">'-&gt;'</span>,connectionstyle = <span class="string">'arc3,rad = 0.2'</span>))</span><br><span class="line">plt.plot([t,t],[<span class="number">0</span>,np.cos(t)],<span class="string">'--r'</span>,linewidth = <span class="number">2</span>)</span><br><span class="line">plt.scatter(t,np.cos(t),<span class="number">50</span>,color = <span class="string">'r'</span>)</span><br><span class="line">plt.annotate(<span class="string">r'$\cos(\frac&#123;3\pi&#125;&#123;4&#125;)=-\frac&#123;\sqrt&#123;2&#125;&#125;&#123;2&#125;$'</span>,(t,np.cos(t)),ha = <span class="string">'left'</span>,xytext = (<span class="number">-130</span>,<span class="number">-50</span>),  xycoords = <span class="string">'data'</span>,\</span><br><span class="line">	textcoords=<span class="string">'offset points'</span>,fontsize = <span class="number">16</span>, arrowprops = dict(arrowstyle = <span class="string">'-&gt;'</span>,connectionstyle = <span class="string">'arc3,rad = 0.2'</span>))</span><br><span class="line"></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p><img src="http://poatdt87z.bkt.clouddn.com/sin_cos_better.png" alt="sin_cos_batter"></p>
+</li>
+</ol>
+</li>
+</ol>
 
       
 
@@ -212,12 +438,26 @@
     </div>
     <div class="article-info article-info-index">
       
-        <div class="article-pop-out tagcloud">
-          <i class="icon-tuding"></i>
-          <a class="article-tag-list-link color3">置顶</a>
-        </div>
       
-      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Matplotlib</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">noteBook</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -268,7 +508,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://liuqixuan.github.io/2019/03/09/index/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://liuqixuan.github.io/2019/03/13/Matplotlib 学习笔记/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -282,18 +522,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/03/13/NumPy 高维数组降维方法详细分析/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          NumPy 降维方法深度解析
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/03/09/Python 科学计算/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Python科学计算</div>
+    <a href="/2019/03/13/NumPy 高维数组降维方法详细分析/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">NumPy 降维方法深度解析</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -312,6 +543,19 @@
             </div>
         </div>
         
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Matplotlib"><span class="toc-number">1.</span> <span class="toc-text">Matplotlib</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Matplotlib中文显示"><span class="toc-number">1.1.</span> <span class="toc-text">Matplotlib中文显示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#绘制一次方程"><span class="toc-number">1.2.</span> <span class="toc-text">绘制一次方程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#绘制离散图"><span class="toc-number">1.3.</span> <span class="toc-text">绘制离散图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#绘制正弦函数"><span class="toc-number">1.4.</span> <span class="toc-text">绘制正弦函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#绘制子图"><span class="toc-number">1.5.</span> <span class="toc-text">绘制子图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#绘制条形图"><span class="toc-number">1.6.</span> <span class="toc-text">绘制条形图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#绘制饼图"><span class="toc-number">1.7.</span> <span class="toc-text">绘制饼图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#绘制一个完整的线型图"><span class="toc-number">1.8.</span> <span class="toc-text">绘制一个完整的线型图</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
         
     </div>
 </aside>
