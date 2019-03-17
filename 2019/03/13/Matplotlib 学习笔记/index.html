@@ -38,7 +38,7 @@
 <meta property="og:image" content="http://www.runoob.com/wp-content/uploads/2018/10/1540012570-8671-ticks-MultipleLocator.png">
 <meta property="og:image" content="http://www.runoob.com/wp-content/uploads/2018/10/1540012570-3960-ticks-AutoLocator.png">
 <meta property="og:image" content="http://www.runoob.com/wp-content/uploads/2018/10/1540012571-8369-ticks-LogLocator.png">
-<meta property="og:updated_time" content="2019-03-16T15:15:19.919Z">
+<meta property="og:updated_time" content="2019-03-16T15:25:54.901Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Matplotlib 学习笔记">
 <meta name="twitter:description" content="MatplotlibMatplotlib 是Python2D绘图领域使用最广泛的套件。能导出多种格式的图片。 Matplotlib中文显示Matplotlib默认是不支持中文的，如果出现中文会以方框代替。  但是经过测试国外字体中部分可以支持。 12345678goodfont=[ &apos;Adobe Heiti Std&apos;, &apos;Arial Unicode MS&apos;, &apos;DengXian&apos;, &apos;SimHei">
@@ -475,7 +475,7 @@
 </ol>
 </li>
 </ol>
-<h3 id="使用Axes-布局"><a href="#使用Axes-布局" class="headerlink" title="使用Axes 布局"></a>使用Axes 布局</h3><p>可以使用plt.axes((x,y,w,h))创建一个新的坐标系，可以适用该方法绘制出更具有制订性的多子图。相对于subplot来讲这种方法可以设计出更加复杂的布局，因此参数也更加复杂。再绘制前应该画出草稿并计算各子图的坐标及宽高。</p>
+<h3 id="使用Axes-布局"><a href="#使用Axes-布局" class="headerlink" title="使用Axes 布局"></a>使用Axes 布局</h3><p>可以使用plt.axes((x,y,w,h))创建一个新的坐标系，可以适用该方法绘制出更具有制订性的多子图。相对于subplot来讲这种方法可以设计出更加复杂的布局，因此参数也更加复杂。在绘制前应该画出草稿并计算各子图的坐标及宽高。</p>
 <p><strong>注意：</strong></p>
 <blockquote>
 <p>该函数的参数中x,y,w,h均为0-1的浮点数。代表所占figure的百分比。</p>
@@ -694,17 +694,20 @@ gitalk.render('gitalk-container')
     <div class="outer">
         <div id="footer-info">
             <div class="footer-left">
-                &copy; 2019 刘祺轩
+                &copy;
+                2019 刘祺轩
             </div>
             <div class="footer-center">
                 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
-                <div class="footer-right">
-                    PowerBy <a href="http://hexo.io/" target="_blank">Hexo</a>  
-                </div>
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次&nbsp;总访客<<span id="busuanzi_value_site_uv"></span><span>人</span>
+                </span>
+            </div>
+            <div class="footer-right">
+                PowerBy <a href="http://hexo.io/" target="_blank">Hexo</a>  
             </div>
         </div>
-    </div></footer>
+    </div>
+</footer>
     </div>
     <script>
 	var yiliaConfig = {
