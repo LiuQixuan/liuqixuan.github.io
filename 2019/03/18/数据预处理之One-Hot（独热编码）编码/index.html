@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="LiuQixuan&#39;Blog">
 <meta property="og:description" content="数据预处理之One-Hot（独热编码）编码为什么使用One-Hot编码对于机器学习任务中，特征并不总是连续值，很多是分类值。这些分类值本身没有大小的意义。为了将数据集中一个分类变量替换为一个或多个新特征，我们使用One-Hot编码对数据进行预处理。 独热编码（哑变量 dummy variable）是因为大部分算法是基于向量空间中的度量来进行计算的，为了使非偏序关系的变量取值不具有偏序性，并且到圆点">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-18T09:38:53.059Z">
+<meta property="og:updated_time" content="2019-03-18T09:42:06.736Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据预处理之One-Hot（独热编码）编码">
 <meta name="twitter:description" content="数据预处理之One-Hot（独热编码）编码为什么使用One-Hot编码对于机器学习任务中，特征并不总是连续值，很多是分类值。这些分类值本身没有大小的意义。为了将数据集中一个分类变量替换为一个或多个新特征，我们使用One-Hot编码对数据进行预处理。 独热编码（哑变量 dummy variable）是因为大部分算法是基于向量空间中的度量来进行计算的，为了使非偏序关系的变量取值不具有偏序性，并且到圆点">
@@ -206,8 +206,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="数据预处理之One-Hot（独热编码）编码"><a href="#数据预处理之One-Hot（独热编码）编码" class="headerlink" title="数据预处理之One-Hot（独热编码）编码"></a>数据预处理之One-Hot（独热编码）编码</h1><h2 id="为什么使用One-Hot编码"><a href="#为什么使用One-Hot编码" class="headerlink" title="为什么使用One-Hot编码"></a>为什么使用One-Hot编码</h2><p>对于机器学习任务中，特征并不总是连续值，很多是分类值。这些分类值本身没有大小的意义。为了将数据集中一个分类变量替换为一个或多个新特征，我们使用One-Hot编码对数据进行预处理。</p>
-<p>独热编码（哑变量 dummy variable）是因为大部分算法是<strong>基于向量空间</strong>中的度量来进行计算的，为了使非偏序关系的变量取值不具有偏序性，并且到圆点是等距的。使用one-hot编码，将离散特征的取值扩展到了欧式空间，离散特征的某个取值就对应欧式空间的某个点。将离散型特征使用one-hot编码，会让特征之间的<strong>距离计算更加合理</strong>。离散特征进行one-hot编码后，编码后的特征，其实每一维度的特征都可以看做是<strong>连续的特征</strong>。就可以跟对连续型特征的<strong>归一化</strong>方法一样，对每一维特征进行归一化。比如归一化到[-1,1]或归一化到均值为0,方差为1。       </p>
-<p>​        为什么特征向量要映射到欧式空间？</p>
+<p>独热编码（哑变量 dummy variable）是因为大部分算法是<strong>基于向量空间</strong>中的度量来进行计算的，为了使非偏序关系的变量取值不具有偏序性，并且到圆点是等距的。使用one-hot编码，将离散特征的取值扩展到了欧式空间，离散特征的某个取值就对应欧式空间的某个点。将离散型特征使用one-hot编码，会让特征之间的<strong>距离计算更加合理</strong>。离散特征进行one-hot编码后，编码后的特征，其实每一维度的特征都可以看做是<strong>连续的特征</strong>。就可以跟对连续型特征的<strong>归一化</strong>方法一样，对每一维特征进行归一化。比如归一化到[-1,1]或归一化到均值为0,方差为1。<br><a id="more"></a><br>​        为什么特征向量要映射到欧式空间？</p>
 <p>​        将离散特征通过one-hot编码映射到欧式空间，是因为，在回归，分类，聚类等机器学习算法中，特征之间距离的计算或相似度的计算是非常重要的，而我们常用的距离或相似度的计算都是在欧式空间的相似度计算，计算余弦相似性，基于的就是欧式空间。</p>
 <h2 id="什么是One-Hot编码"><a href="#什么是One-Hot编码" class="headerlink" title="什么是One-Hot编码"></a>什么是One-Hot编码</h2><p>独热编码即 One-Hot 编码，又称一位有效编码，其方法是使用N位状态寄存器来对N个状态进行编码，每个状态都由他独立的寄存器位，并且在任意时候，其中只有一位有效(即各种属性之间相互排斥)。</p>
 <p>简而言之，即把离散的特征的每一种取值都看成一种状态。</p>
@@ -511,6 +510,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Matplotlib</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">noteBook</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Python</a>
               </li>
              
@@ -520,14 +527,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">notebook</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Matplotlib</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">noteBook</a>
               </li>
             
             <div class="clearfix"></div>
