@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://liuqixuan.github.io">
-  <title>Tag: science conputing | LiuQixuan&#39;Blog</title>
+  <title>数据预处理之One-Hot（独热编码）编码 | LiuQixuan&#39;Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="LiuQixuan&#39;Blog">
-<meta property="og:url" content="https://liuqixuan.github.io/tags/science-conputing/index.html">
+  <meta name="description" content="数据预处理之One-Hot（独热编码）编码为什么使用One-Hot编码对于机器学习任务中，特征并不总是连续值，很多是分类值。这些分类值本身没有大小的意义。为了将数据集中一个分类变量替换为一个或多个新特征，我们使用One-Hot编码对数据进行预处理。 独热编码（哑变量 dummy variable）是因为大部分算法是基于向量空间中的度量来进行计算的，为了使非偏序关系的变量取值不具有偏序性，并且到圆点">
+<meta name="keywords" content="python,MachineLearning">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据预处理之One-Hot（独热编码）编码">
+<meta property="og:url" content="https://liuqixuan.github.io/2019/03/18/数据预处理之One-Hot（独热编码）编码/index.html">
 <meta property="og:site_name" content="LiuQixuan&#39;Blog">
+<meta property="og:description" content="数据预处理之One-Hot（独热编码）编码为什么使用One-Hot编码对于机器学习任务中，特征并不总是连续值，很多是分类值。这些分类值本身没有大小的意义。为了将数据集中一个分类变量替换为一个或多个新特征，我们使用One-Hot编码对数据进行预处理。 独热编码（哑变量 dummy variable）是因为大部分算法是基于向量空间中的度量来进行计算的，为了使非偏序关系的变量取值不具有偏序性，并且到圆点">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-03-18T09:38:53.059Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="LiuQixuan&#39;Blog">
+<meta name="twitter:title" content="数据预处理之One-Hot（独热编码）编码">
+<meta name="twitter:description" content="数据预处理之One-Hot（独热编码）编码为什么使用One-Hot编码对于机器学习任务中，特征并不总是连续值，很多是分类值。这些分类值本身没有大小的意义。为了将数据集中一个分类变量替换为一个或多个新特征，我们使用One-Hot编码对数据进行预处理。 独热编码（哑变量 dummy variable）是因为大部分算法是基于向量空间中的度量来进行计算的，为了使非偏序关系的变量取值不具有偏序性，并且到圆点">
   
     <link rel="alternative" href="/atom.xml" title="LiuQixuan&#39;Blog" type="application/atom+xml">
   
@@ -180,36 +185,63 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-数据预处理之One-Hot（独热编码）编码" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/03/09/Python 科学计算/" class="archive-article-date">
-  	<time datetime="2019-03-09T13:23:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-09</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/03/09/Python 科学计算/">Python科学计算</a>
+    <h1 class="article-title" itemprop="name">
+      数据预处理之One-Hot（独热编码）编码
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2019/03/18/数据预处理之One-Hot（独热编码）编码/" class="archive-article-date">
+  	<time datetime="2019-03-18T09:36:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="数据预处理之One-Hot（独热编码）编码"><a href="#数据预处理之One-Hot（独热编码）编码" class="headerlink" title="数据预处理之One-Hot（独热编码）编码"></a>数据预处理之One-Hot（独热编码）编码</h1><h2 id="为什么使用One-Hot编码"><a href="#为什么使用One-Hot编码" class="headerlink" title="为什么使用One-Hot编码"></a>为什么使用One-Hot编码</h2><p>对于机器学习任务中，特征并不总是连续值，很多是分类值。这些分类值本身没有大小的意义。为了将数据集中一个分类变量替换为一个或多个新特征，我们使用One-Hot编码对数据进行预处理。</p>
+<p>独热编码（哑变量 dummy variable）是因为大部分算法是<strong>基于向量空间</strong>中的度量来进行计算的，为了使非偏序关系的变量取值不具有偏序性，并且到圆点是等距的。使用one-hot编码，将离散特征的取值扩展到了欧式空间，离散特征的某个取值就对应欧式空间的某个点。将离散型特征使用one-hot编码，会让特征之间的<strong>距离计算更加合理</strong>。离散特征进行one-hot编码后，编码后的特征，其实每一维度的特征都可以看做是<strong>连续的特征</strong>。就可以跟对连续型特征的<strong>归一化</strong>方法一样，对每一维特征进行归一化。比如归一化到[-1,1]或归一化到均值为0,方差为1。       </p>
+<p>​        为什么特征向量要映射到欧式空间？</p>
+<p>​        将离散特征通过one-hot编码映射到欧式空间，是因为，在回归，分类，聚类等机器学习算法中，特征之间距离的计算或相似度的计算是非常重要的，而我们常用的距离或相似度的计算都是在欧式空间的相似度计算，计算余弦相似性，基于的就是欧式空间。</p>
+<h2 id="什么是One-Hot编码"><a href="#什么是One-Hot编码" class="headerlink" title="什么是One-Hot编码"></a>什么是One-Hot编码</h2><p>独热编码即 One-Hot 编码，又称一位有效编码，其方法是使用N位状态寄存器来对N个状态进行编码，每个状态都由他独立的寄存器位，并且在任意时候，其中只有一位有效(即各种属性之间相互排斥)。</p>
+<p>简而言之，即把离散的特征的每一种取值都看成一种状态。</p>
+<p>这样做的好处主要有：</p>
+<ol>
+<li><p>解决了分类器不好处理属性数据的问题</p>
+</li>
+<li><p>在一定程度上也起到了扩充特征的作用</p>
+</li>
+</ol>
+<p>eg：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">自然状态码为：<span class="number">000</span>,<span class="number">001</span>,<span class="number">010</span>,<span class="number">011</span>,<span class="number">100</span>,<span class="number">101</span></span><br><span class="line"></span><br><span class="line">独热编码为：<span class="number">000001</span>,<span class="number">000010</span>,<span class="number">000100</span>,<span class="number">001000</span>,<span class="number">010000</span>,<span class="number">100000</span></span><br></pre></td></tr></table></figure>
+<h2 id="One-Hot编码特征"><a href="#One-Hot编码特征" class="headerlink" title="One-Hot编码特征"></a>One-Hot编码特征</h2><ol>
+<li>经过独热编码后，就变成了m个二元特征。</li>
+<li>这些特征互斥，每次只有一个激活。</li>
+<li>数据会变的稀疏</li>
+</ol>
+<h2 id="One-Hot编码的优缺点"><a href="#One-Hot编码的优缺点" class="headerlink" title="One-Hot编码的优缺点"></a>One-Hot编码的优缺点</h2><ul>
+<li>优点：独热编码解决了分类器不好处理属性数据的问题，在一定程度上也起到了<strong>扩充特征</strong>的作用。它的值只有0和1，不同的类型存储在垂直的空间。</li>
+<li>缺点：当类别的数量很多时，<strong>特征空间</strong>会变得非常大。在这种情况下，一般可以用PCA<em>(principal Component Analysis，主成分分析方法)来<strong>减少维度</strong>。而且one hot encoding+</em>PCA这种组合在实际中也非常有用。</li>
+</ul>
+<h2 id="使用One-Hot编码的场合"><a href="#使用One-Hot编码的场合" class="headerlink" title="使用One-Hot编码的场合"></a>使用One-Hot编码的场合</h2><p>首先要明确，独热编码用来解决<strong>类别型数据</strong>的离散值问题。</p>
+<p>将离散型特征进行one-hot编码的作用，是为了<strong>让距离计算更合理</strong>，但如果特征是离散的，并且不用one-hot编码就可以很合理的计算出距离，那么就没必要进行one-hot编码。 有些基于<strong>树的算法</strong>在处理变量时，并不是基于<strong>向量空间</strong>度量，数值只是个类别符号，即没有偏序关系，所以不用进行独热编码。  Tree Model不太需要one-hot编码： 对于决策树来说，one-hot的本质是<strong>增加树的深度</strong>。</p>
+<h2 id="One-Hot-和-哑变量（虚拟变量）"><a href="#One-Hot-和-哑变量（虚拟变量）" class="headerlink" title="One-Hot 和 哑变量（虚拟变量）"></a>One-Hot 和 哑变量（虚拟变量）</h2><p>首先One-Hot编码主要解决数据的向量化 表示，而虚拟变量则是一个统计学概念。</p>
+<p>对于哑变量余独热编码的相异点，最直观的理解就是哑变量将任意一个One-Hot编码状态去除。即哑变量将定性特征转化为n-1个特征，而One-hot则是转化为n个特征。意思就是哑变量在编码时会去除第一个状态，而One-hot则对所有的状态都会进行编码。</p>
+<p>这样可以使One-Hot编码减少一个冗余位，这种去除是随机的。但是对于一个没有权重的数据集而言随机取出有点过于随意。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -219,25 +251,146 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">science conputing</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">MachineLearning</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://liuqixuan.github.io/2019/03/18/数据预处理之One-Hot（独热编码）编码/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2019/03/13/Matplotlib 学习笔记/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Matplotlib 学习笔记</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#数据预处理之One-Hot（独热编码）编码"><span class="toc-number">1.</span> <span class="toc-text">数据预处理之One-Hot（独热编码）编码</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#为什么使用One-Hot编码"><span class="toc-number">1.1.</span> <span class="toc-text">为什么使用One-Hot编码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是One-Hot编码"><span class="toc-number">1.2.</span> <span class="toc-text">什么是One-Hot编码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#One-Hot编码特征"><span class="toc-number">1.3.</span> <span class="toc-text">One-Hot编码特征</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#One-Hot编码的优缺点"><span class="toc-number">1.4.</span> <span class="toc-text">One-Hot编码的优缺点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用One-Hot编码的场合"><span class="toc-number">1.5.</span> <span class="toc-text">使用One-Hot编码的场合</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#One-Hot-和-哑变量（虚拟变量）"><span class="toc-number">1.6.</span> <span class="toc-text">One-Hot 和 哑变量（虚拟变量）</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
+
+  
+  <div id="gitalk-container"></div>
+<link rel="stylesheet" href="/./src/css/gitalk.css">
+<script src="/./src/js/gitalk.min.js"></script>
+<script>
+const gitalk = new Gitalk({
+  clientID: '44bbc30d1559eaf09ffe',
+  clientSecret: '9ed586810b3b0ea338118330140574e92aa7b68e',
+  repo: 'liuqixuan.github.io',
+  owner: 'LiuQixuan',
+  admin: ['LiuQixuan'],
+  id: location.href,      // Ensure uniqueness and length less than 50
+  distractionFreeMode: false  // Facebook-like distraction free mode
+})
+
+gitalk.render('gitalk-container')
+</script>
+  
+
+
 
 
           </div>
@@ -266,9 +419,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: false,
@@ -354,11 +507,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Matplotlib</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">noteBook</a>
+                <a href="javascript:void(0)" class="js-tag color1">MachineLearning</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -374,7 +523,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">science conputing</a>
+                <a href="javascript:void(0)" class="js-tag color1">Matplotlib</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">noteBook</a>
               </li>
             
             <div class="clearfix"></div>
