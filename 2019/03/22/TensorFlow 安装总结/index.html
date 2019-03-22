@@ -6,22 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://liuqixuan.github.io">
-  <title>Python进阶笔记 | LiuQixuan&#39;Blog</title>
+  <title>TensorFlow 安装总结 | LiuQixuan&#39;Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Python 进阶学习笔记 当年学了点Python2 ，那时候听说什么Python3 失去了Python的灵魂，就没管Python3 。 最近因为项目需要使用Python3，又把当年的那份热血花在了Python3的学习上。 本以为Python3只是Python2 的升级会很好上手，没想到Python3相对于Python2而言有太多的新语法、新概念。 从小养成学习记笔记的好习惯，把学习遇到的重点写下">
-<meta name="keywords" content="Python,advancement,notebook">
+  <meta name="description" content="TensorFlow 安装总结 TensorFlow 简介：TensorFlow 是 Google 公司人工智能团队谷歌大脑（Google Brain）研发和维护的开源深度学习框架，世界上由成千上万个开发者为该项目贡献代码，框架能够随着对深度学习的研究进展及时更新。TensorFlow 核心组件包括：最底层的设备层、内核应用、执行器、分发中心。主要是对张量进行运算，有适用于高阶神经网络的Estim">
+<meta name="keywords" content="MachineLearning,pythpon,TensorFlow">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python进阶笔记">
-<meta property="og:url" content="https://liuqixuan.github.io/2019/03/06/Python 笔记/index.html">
+<meta property="og:title" content="TensorFlow 安装总结">
+<meta property="og:url" content="https://liuqixuan.github.io/2019/03/22/TensorFlow 安装总结/index.html">
 <meta property="og:site_name" content="LiuQixuan&#39;Blog">
-<meta property="og:description" content="Python 进阶学习笔记 当年学了点Python2 ，那时候听说什么Python3 失去了Python的灵魂，就没管Python3 。 最近因为项目需要使用Python3，又把当年的那份热血花在了Python3的学习上。 本以为Python3只是Python2 的升级会很好上手，没想到Python3相对于Python2而言有太多的新语法、新概念。 从小养成学习记笔记的好习惯，把学习遇到的重点写下">
+<meta property="og:description" content="TensorFlow 安装总结 TensorFlow 简介：TensorFlow 是 Google 公司人工智能团队谷歌大脑（Google Brain）研发和维护的开源深度学习框架，世界上由成千上万个开发者为该项目贡献代码，框架能够随着对深度学习的研究进展及时更新。TensorFlow 核心组件包括：最底层的设备层、内核应用、执行器、分发中心。主要是对张量进行运算，有适用于高阶神经网络的Estim">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="file:///C:/Users/LiuQixuan/Desktop/pypro/type_class.png">
-<meta property="og:updated_time" content="2019-03-14T01:37:35.366Z">
+<meta property="og:image" content="http://poatdt87z.bkt.clouddn.com/tensorflow2.0.gif">
+<meta property="og:image" content="http://poatdt87z.bkt.clouddn.com/mem.png">
+<meta property="og:updated_time" content="2019-03-22T04:07:57.658Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python进阶笔记">
-<meta name="twitter:description" content="Python 进阶学习笔记 当年学了点Python2 ，那时候听说什么Python3 失去了Python的灵魂，就没管Python3 。 最近因为项目需要使用Python3，又把当年的那份热血花在了Python3的学习上。 本以为Python3只是Python2 的升级会很好上手，没想到Python3相对于Python2而言有太多的新语法、新概念。 从小养成学习记笔记的好习惯，把学习遇到的重点写下">
-<meta name="twitter:image" content="file:///C:/Users/LiuQixuan/Desktop/pypro/type_class.png">
+<meta name="twitter:title" content="TensorFlow 安装总结">
+<meta name="twitter:description" content="TensorFlow 安装总结 TensorFlow 简介：TensorFlow 是 Google 公司人工智能团队谷歌大脑（Google Brain）研发和维护的开源深度学习框架，世界上由成千上万个开发者为该项目贡献代码，框架能够随着对深度学习的研究进展及时更新。TensorFlow 核心组件包括：最底层的设备层、内核应用、执行器、分发中心。主要是对张量进行运算，有适用于高阶神经网络的Estim">
+<meta name="twitter:image" content="http://poatdt87z.bkt.clouddn.com/tensorflow2.0.gif">
   
     <link rel="alternative" href="/atom.xml" title="LiuQixuan&#39;Blog" type="application/atom+xml">
   
@@ -187,426 +188,332 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Python 笔记" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-TensorFlow 安装总结" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Python进阶笔记
+      TensorFlow 安装总结
     </h1>
   
 
         
-        <a href="/2019/03/06/Python 笔记/" class="archive-article-date">
-  	<time datetime="2019-03-06T13:23:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-06</time>
+        <a href="/2019/03/22/TensorFlow 安装总结/" class="archive-article-date">
+  	<time datetime="2019-03-22T04:30:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-22</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Python 进阶学习笔记 当年学了点Python2 ，那时候听说什么Python3 失去了Python的灵魂，就没管Python3 。 最近因为项目需要使用Python3，又把当年的那份热血花在了Python3的学习上。 本以为Python3只是Python2 的升级会很好上手，没想到Python3相对于Python2而言有太多的新语法、新概念。 从小养成学习记笔记的好习惯，把学习遇到的重点写下来，第一日后复习用，其次如果有其他同学看到我的笔记，并感觉有用，也是算是我劳动成果的附加收益吧</p>
-<h2 id="函数式编程"><a href="#函数式编程" class="headerlink" title="函数式编程"></a>函数式编程</h2><ul>
-<li>高阶函数(参数里有函数类型)<blockquote>
-<p>map/reduce(functools.reduce())<br>filter<br>sorted</p>
-</blockquote>
-</li>
-<li>返回函数（返回函数类型）</li>
-<li>匿名函数（<code>lambda</code>）</li>
-<li>装饰器（<code>@：有参装饰器、无参装饰器,functools.wraps(function)</code>）</li>
-<li>偏函数（<code>functools.partor(function[,args,**kwords]</code>)</li>
-</ul>
+        <h1 id="TensorFlow-安装总结"><a href="#TensorFlow-安装总结" class="headerlink" title="TensorFlow 安装总结"></a>TensorFlow 安装总结</h1><p><img src="http://poatdt87z.bkt.clouddn.com/tensorflow2.0.gif" alt="TensorFlow 2.0 Logo"></p>
+<h2 id="TensorFlow-简介："><a href="#TensorFlow-简介：" class="headerlink" title="TensorFlow 简介："></a>TensorFlow 简介：</h2><p>TensorFlow 是 Google 公司人工智能团队谷歌大脑（Google Brain）研发和维护的开源深度学习框架，世界上由成千上万个开发者为该项目贡献代码，框架能够随着对深度学习的研究进展及时更新。TensorFlow 核心组件包括：最底层的设备层、内核应用、执行器、分发中心。主要是对张量进行运算，有适用于高阶神经网络的Estimators接口。而且 TensorFlow 可轻松移植到网页端和移动设备上。目前最新版是TensorFlow 1.13.1。</p>
+<p>TensorFlow-GPU是TensorFlow的GPU版，能够使用支持NVIDIA CUDA 并行计算技术的显卡进行矢量运算，其训练模型的效率比CPU高几十到上百倍。</p>
 <a id="more"></a>
-<h2 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h2><h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><blockquote>
-<p>1.静态字段<br>2.普通字段(self.value)</p>
-</blockquote>
-<p>###方法(存储在内存中)</p>
-<blockquote>
-<p>1.普通方法def func(self[,args])<br>2.类方法(@classmethod def func(cls[,args]))<br>3.静态方法(@staticmethod def func())</p>
-</blockquote>
-<p>###属性（@property def func(self)）</p>
-<blockquote>
-<p>1.静态字段<br>2.装饰类</p>
-<blockquote>
-<p>经典装饰器<br>新装饰器</p>
-<blockquote>
-<p>方法一<br>继承object</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;@property object.func</span><br><span class="line">&gt;&gt;&gt;@func.setter object.func = value</span><br><span class="line">&gt;&gt;&gt;@func.deleter <span class="keyword">del</span> object.func</span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>方法二<br>创建property对象的静态字段<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;pro = property(get_value(),set_value(),del_value(),__doc__)</span><br><span class="line">&gt;&gt;&gt;obj = Object()</span><br><span class="line">&gt;&gt;&gt;ov = obj.pro</span><br><span class="line">&gt;&gt;&gt;obj.pro = value</span><br><span class="line">&gt;&gt;&gt;<span class="keyword">del</span> obj.pro</span><br><span class="line">&gt;&gt;&gt;obj.pro.__doc__</span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>类的特殊成员</p>
-</blockquote>
-</blockquote>
+<h2 id="并行计算框架安装："><a href="#并行计算框架安装：" class="headerlink" title="并行计算框架安装："></a>并行计算框架安装：</h2><p>我们打开TensorFlow的官网可以明显的在导航栏找到 Install 页面的入口。</p>
+<p>然而相信我，安装TensorFlow与那没有官方页面上写的几行命令输入后就可以去喝茶了，喝杯茶刷刷微博，那边就安装完成了。</p>
+<p>因为TensorFlow支持众多平台，首先我们要搞懂TensorFlow到底有多少版本。</p>
 <ul>
-<li><p><code>__doc__</code> 表示类的描述信息</p>
-</li>
-<li><p><code>__name__</code>类名</p>
-</li>
-<li><p><code>__bases__</code>类的所有父类构成的元组:tuple,不包含该类的type (类名即type类型使用<code>(my_class,)</code>可获得该类名的元组）</p>
-</li>
-<li><p><code>__mro__</code>类的继承顺序包含类本身<class '__main__.my_class'>, </class></p>
-</li>
-<li><p><code>__module__</code> 表示当前操作的对象在那个模块 packages.module</p>
-</li>
-<li><p><code>__class__</code> 表示当前操作的对象的类 packages.module.class</p>
-</li>
-<li><p><code>__init__()</code> 类的构造方法</p>
-</li>
-<li><p><code>__del__()</code> 类的析构方法</p>
-</li>
-<li><p><code>__call__()</code> 对象的方法 obj() self()</p>
-</li>
-<li><p><code>__getattr__()</code>当访问obj不存在的属性时会调用该方法  </p>
-<p> getattr(obj, name, value)  ==&gt; obj.name 不存在该属性返回value</p>
-<p> name是函数name()需要添加@property 描述符</p>
-</li>
-<li><p><code>__dict__</code> 类或对象中的所有成员</p>
-</li>
-<li><p><code>__str__</code> 将类格式化成字符串 print(obj) 时调用,即toString()方法</p>
-</li>
-<li><p><code>__repr__</code> 将类格式化成字符串 print(obj) 时调用,和 <code>__str__</code> 的区别：更适合从编程语言上理解<br>print(obj)<br>[output:] class_name.method(self, arg1, arg2, …)</p>
-</li>
-<li><p><code>__getitem__</code> 用于索引操作[num]，获取数据</p>
-</li>
-<li><p><code>__setitem__</code> 用于索引操作[num]，设置数据</p>
-</li>
-<li><p><code>__delitem__</code> 用于索引操作[num]，删除数据</p>
-<blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt; <span class="class"><span class="keyword">class</span> <span class="title">mydict</span><span class="params">(object)</span>:</span></span><br><span class="line">&gt;&gt; <span class="function"><span class="keyword">def</span> <span class="title">__getitem__</span><span class="params">(self, key)</span>:</span></span><br><span class="line">&gt;&gt;  <span class="keyword">return</span> self.key</span><br><span class="line">&gt;&gt; <span class="function"><span class="keyword">def</span> <span class="title">__setitem__</span><span class="params">(self, key, value)</span>:</span></span><br><span class="line">&gt;&gt;  self.key = value</span><br><span class="line">&gt;&gt; <span class="function"><span class="keyword">def</span> <span class="title">__delitem__</span><span class="params">(self, key)</span>:</span></span><br><span class="line">&gt;&gt;  <span class="keyword">del</span> self.key</span><br><span class="line">&gt;&gt;  obj = mydict()</span><br><span class="line">&gt;&gt;  result = obj[]</span><br><span class="line">&gt;&gt;  obj[<span class="string">'key'</span>] = value</span><br><span class="line">&gt;&gt;  <span class="keyword">del</span> obj[<span class="string">'key'</span>]</span><br><span class="line">&gt;&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-</li>
+<li>Ubuntu 16.04 或更高版本（这里可代表Linux家族）</li>
+<li>Windows 7 或更高版本</li>
+<li>macOS 10.12.6 (Sierra) 或更高版本（不支持 GPU）</li>
+<li>Raspbian 9.0 或更高版本</li>
 </ul>
-</blockquote>
+<p>可以看出来通用的版本都是支持的。</p>
+<h3 id="安装Cuda"><a href="#安装Cuda" class="headerlink" title="安装Cuda"></a>安装Cuda</h3><h4 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h4><p>首先我们看一下linux版的安装步骤</p>
+<ol>
+<li><p>由于GPU版本计算速度更快，所以优先考虑安装GPU版本。我们要查看我们的电脑是否支持GPU版本的硬件。</p>
 <blockquote>
-<blockquote>
-<p><strong>实现切片操作</strong><br><code>__getitem__(self, n)</code>传入的参数n 可能是int也可能是slice</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt; <span class="class"><span class="keyword">class</span> <span class="title">Fib</span><span class="params">(object)</span>:</span></span><br><span class="line">&gt;&gt; <span class="function"><span class="keyword">def</span> <span class="title">__getiter__</span><span class="params">(self, n)</span>:</span></span><br><span class="line">&gt;&gt;  <span class="keyword">if</span> isinstance(n, int):</span><br><span class="line">&gt;&gt;        a, b = <span class="number">1</span>, <span class="number">1</span></span><br><span class="line">&gt;&gt;        <span class="keyword">for</span> x <span class="keyword">in</span> range(n):</span><br><span class="line">&gt;&gt;            a, b = b, a + b</span><br><span class="line">&gt;&gt;      <span class="keyword">return</span> a</span><br><span class="line">&gt;&gt;    <span class="keyword">if</span> isinstanece(n, slice):</span><br><span class="line">&gt;&gt;        l = []</span><br><span class="line">&gt;&gt;        slice.start = <span class="number">0</span> <span class="keyword">if</span> (slice.start <span class="keyword">is</span> <span class="literal">None</span>)</span><br><span class="line">&gt;&gt;        a, b = <span class="number">1</span>, <span class="number">1</span></span><br><span class="line">&gt;&gt;        <span class="keyword">for</span> x <span class="keyword">in</span> range(n.stop):</span><br><span class="line">&gt;&gt;          <span class="keyword">if</span> (x &gt;= n.start <span class="keyword">and</span> (x - n.start)%n.step == <span class="number">0</span>):</span><br><span class="line">&gt;&gt;              l.append(a)</span><br><span class="line">&gt;&gt;            a, b = b, a+b</span><br><span class="line">&gt;&gt;        <span class="keyword">return</span> l</span><br><span class="line">&gt;&gt;        </span><br><span class="line">&gt;&gt;</span><br><span class="line">&gt;&gt;</span><br></pre></td></tr></table></figure>
+<p>这里有两个问题：</p>
+<p>首先，你的电脑需要配置有NVIDIA的显卡</p>
+<p>其次，你的显卡需要在CUDA支持名单里 <a href="https://developer.nvidia.com/cuda-gpus" target="_blank" rel="noopener">GPUSUPPORT</a></p>
 </blockquote>
-</blockquote>
+</li>
+<li><p>确认了你的GPU在NVIDIA CUDA技术支持名单里之后就可以安装驱动了。</p>
 <blockquote>
+<p>我们可以直接从NVIDIA官方网站找到CUDA<a href="https://developer.nvidia.com/cuda-downloads" target="_blank" rel="noopener">下载链接</a></p>
+<p>根据自己的操作系统版本下载合适的安装包。</p>
+<p>另外要注意CUDA并不是版本越高越好，一般情况下CUDA发布版本要低于市面上相关机器学习框架的应用版本，也就是说你下载了一个过高的版本可能无法使用，具体如何选择CUDA版本，下文会有介绍。</p>
+</blockquote>
+</li>
+<li></li>
+</ol>
+<p>安装显卡驱动和 Cuda：<br>指定到对应的文件所在位置：<br><code># cd /usr/tmp/tensorflow-gpu</code><br>（这是我的文件所在的路径）</p>
+<p>cd到驱动所在目录：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># sh ./NVIDIA-Linux-x86_64-375.66.run</span><br><span class="line"># sh cuda_8.0.61_375.26_linux.run</span><br></pre></td></tr></table></figure>
+<p>修改配置文件：</p>
+<p><code># vi ~/.bashrc</code><br>（vi 命令为在terminal终端中进入文本编辑的方法，有的是vim，有界面还可以gedit ~/.bashrc方法进入）<br>按Insert键，进入插入模式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">#gpu driver </span><br><span class="line"></span><br><span class="line">export CUDA_HOME=/usr/local/cuda-8.0 </span><br><span class="line"></span><br><span class="line">exportPATH=/usr/local/cuda-8.0/bin:$PATH </span><br><span class="line"></span><br><span class="line">exportLD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64:$LD_LIBRARY_PATH </span><br><span class="line"></span><br><span class="line">exportLD_LIBRARY_PATH=&quot;/usr/local/cuda-8.0/lib:$&#123;LD_LIBRARY_PATH&#125;&quot;</span><br></pre></td></tr></table></figure>
+<p>按 Esc 键， 并输入<br><code># wq</code><br>表示写入并退出。</p>
+<p>修改之后需要激活所修改的配置文件：</p>
+<p><code># source ~/.bashrc</code><br>然后重启服务器<br><code># reboot</code><br>接下来就可以通过查看显卡信息测试驱动是否安装成功：</p>
+<p><code># nvidia-smi</code><br><img src="http://poatdt87z.bkt.clouddn.com/mem.png" alt="mem"><br>有显示，说明显卡驱动安装成功，继续闯关！</p>
+<p>测试CUDA是否安装成功：<br><code># cd /usr/local/cuda/samples/</code><br>如果安装成功了的话，上面这个文件夹是可以进去的<br><code># make（这步运行时间比较长，不要以为存在问题）</code><br><code># ./bin/x86_64/linux/release/deviceQuery</code></p>
+<p>#./bin/x86_64/linux/release/bandwidthTest<br>显示 Result = PASS 则测试通过<br>安装CUDNN<br>指定到对应的文件所在位置：<br><code># cd /usr/tmp/tensorflow-gpu</code><br>（这是我的文件所在的路径）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ tar -zxvf cudnn-8.0-linux-x64-v6.0.tgz</span><br><span class="line"></span><br><span class="line">$ cd cuda</span><br><span class="line"></span><br><span class="line">$ cp include/* /usr/local/cuda-8.0/inlcude/</span><br><span class="line"></span><br><span class="line">$ cp lib64/lib* /usr/local/cuda-8.0/lib64/</span><br></pre></td></tr></table></figure>
+<p>注意驱动和cuda的安装顺序，先安装驱动的话，安装cuda时x-configtion选择N</p>
+<h4 id="Mac-OS和Raspbian"><a href="#Mac-OS和Raspbian" class="headerlink" title="Mac OS和Raspbian"></a>Mac OS和Raspbian</h4><p>因为该硬件没有NVIDIA的显卡所以压根就不支持CUDA，这里跳过</p>
+<h4 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h4><p>Windows安装CUDA和安装NVIDIA显卡驱动步骤一致。</p>
+<p>下载CUDA安装包，打开解压安装。选择精简版安装，安装程序会自动检测不兼容的软件，然会自己安装，自己注册环境变量，十分简单。</p>
+<p>由于国产部分杀毒防护软件敌友不分，在安装完成之后，一定要人工检查一下系统变量，看一下CUDA路径是否被添加到Windows环境变量里。</p>
+<h3 id="安装cuDNN"><a href="#安装cuDNN" class="headerlink" title="安装cuDNN"></a>安装cuDNN</h3><p>安装cuDNN也很简单，首先从 <a href="https://developer.nvidia.com/rdp/cudnn-download" target="_blank" rel="noopener">官方网站</a> 下载cuDNN，这里需要注册NVIDIA账户。</p>
+<h4 id="Linux-1"><a href="#Linux-1" class="headerlink" title="Linux"></a>Linux</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">安装cudnn:</span><br><span class="line">$ tar -xvzf cudnn-8.0-linux-x64-v6.0.tgz</span><br><span class="line">$ cp -P cuda/include/cudnn.h /usr/local/cuda-8.0/include</span><br><span class="line">$ cp -P cuda/lib64/libcudnn* /usr/local/cuda-8.0/lib64</span><br><span class="line">$ chmod a+r /usr/local/cuda-8.0/include/cudnn.h /usr/local/cuda-8.0/lib64/libcudnn*</span><br></pre></td></tr></table></figure>
+<h4 id="Windows-1"><a href="#Windows-1" class="headerlink" title="Windows"></a>Windows</h4><p>解压<code>cudnn-xxx-windowsxx-x64-vx.x.x.xx.zip</code>文件到cuda安装目录，合并到同名文件夹即可。</p>
+<h2 id="TensorFlow安装"><a href="#TensorFlow安装" class="headerlink" title="TensorFlow安装"></a>TensorFlow安装</h2><p>这里通常有两种安装方法：</p>
+<blockquote>
+<ol>
+<li>从源代码构建</li>
+<li>从发行版安装</li>
+</ol>
+</blockquote>
+<p>前者适合追求最新版本，或者需要深度制定TensorFlow的用户，当然你想体验一下一个大型软件从源码到可执行文件的编译过程也可以尝试。</p>
+<p>后者适合普通用户，可以直接使用Python 的pip工具安装。</p>
+<h4 id="Linux-从源码构建"><a href="#Linux-从源码构建" class="headerlink" title="Linux 从源码构建"></a>Linux 从源码构建</h4><p>Linux 和 macOS 设置</p>
+<p>安装以下构建工具以配置开发环境。</p>
+<p>安装 Python 和 TensorFlow 软件包依赖项</p>
+<p><a href="https://tensorflow.google.cn/install/source#ubuntu" target="_blank" rel="noopener">Ubuntu</a><a href="https://tensorflow.google.cn/install/source#mac-os" target="_blank" rel="noopener">mac OS</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install python-dev python-pip  # or python3-dev python3-pip</span><br></pre></td></tr></table></figure>
+<p>安装 TensorFlow pip 软件包依赖项（如果使用虚拟环境，请省略 <code>--user</code> 参数）：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pip install -U --user pip six numpy wheel mock</span><br><span class="line">pip install -U --user keras_applications==1.0.5 --no-deps</span><br><span class="line">pip install -U --user keras_preprocessing==1.0.3 --no-deps</span><br></pre></td></tr></table></figure>
+<p>这些依赖项列在 <code>REQUIRED_PACKAGES</code> 下的 <a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/pip_package/setup.py" target="_blank" rel="noopener"><code>setup.py</code></a> 文件中。</p>
+<p>安装 Bazel</p>
+<p><a href="https://docs.bazel.build/versions/master/install.html" target="_blank" rel="noopener">安装 Bazel</a>，它是用于编译 TensorFlow 的构建工具。</p>
+<p>将 Bazel 可执行文件的位置添加到 <code>PATH</code> 环境变量中。</p>
+<p>安装支持 GPU 的版本（可选，仅限 Linux）</p>
+<p>没有针对 macOS 的 GPU 支持版本。</p>
+<p>要安装在 GPU 上运行 TensorFlow 所需的驱动程序和其他软件，请参阅 <a href="https://tensorflow.google.cn/install/gpu" target="_blank" rel="noopener">GPU 支持</a>指南。</p>
+<p><strong>注意</strong>：您可以轻松地设置 TensorFlow 的某个支持 GPU 的 <a href="https://tensorflow.google.cn/install/source#docker_linux_builds" target="_blank" rel="noopener">Docker 映像</a>。</p>
+<p>下载 TensorFlow 源代码</p>
+<p>使用 <a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a> 克隆 <a href="https://github.com/tensorflow/tensorflow" target="_blank" rel="noopener">TensorFlow 代码库</a>：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/tensorflow/tensorflow.git</span><br><span class="line">cd tensorflow</span><br></pre></td></tr></table></figure>
+<p>代码库默认为 <code>master</code> 开发分支。您也可以检出要构建的<a href="https://github.com/tensorflow/tensorflow/releases" target="_blank" rel="noopener">版本分支</a>：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout branch_name  # r1.9, r1.10, etc.</span><br></pre></td></tr></table></figure>
+<p>要测试源代码树的副本，请对 r1.12 及更早版本运行以下测试（这可能需要一段时间）：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bazel test -c opt -- //tensorflow/... -//tensorflow/compiler/... -//tensorflow/contrib/lite/...</span><br></pre></td></tr></table></figure>
+<p>对于 r1.12 之后的版本（如 <code>master</code>），请运行以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bazel test -c opt -- //tensorflow/... -//tensorflow/compiler/... -//tensorflow/lite/...</span><br></pre></td></tr></table></figure>
+<p><strong>要点</strong>：如果您在使用最新的开发分支时遇到构建问题，请尝试已知可用的版本分支。</p>
+<p>配置构建</p>
+<p>通过在 TensorFlow 源代码树的根目录下运行以下命令来配置系统构建：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./configure</span><br></pre></td></tr></table></figure>
+<p>此脚本会提示您指定 TensorFlow 依赖项的位置，并要求指定其他构建配置选项（例如，编译器标记）。以下代码展示了 <code>./configure</code> 的示例运行会话（您的会话可能会有所不同）：</p>
+<p>查看示例配置会话</p>
+<p>配置选项</p>
+<p>对于 <a href="https://tensorflow.google.cn/install/gpu" target="_blank" rel="noopener">GPU 支持</a>，请指定 CUDA 和 cuDNN 的版本。如果您的系统安装了多个 CUDA 或 cuDNN 版本，请明确设置版本而不是依赖于默认版本。<code>./configure</code> 会创建指向系统 CUDA 库的符号链接，因此，如果您更新 CUDA 库路径，则必须在构建之前再次运行此配置步骤。</p>
+<p>对于编译优化标记，默认值 (<code>-march=native</code>) 会优化针对计算机的 CPU 类型生成的代码。但是，如果要针对不同类型的 CPU 构建 TensorFlow，请考虑指定一个更加具体的优化标记。要查看相关示例，请参阅 <a href="https://gcc.gnu.org/onlinedocs/gcc-4.5.3/gcc/i386-and-x86_002d64-Options.html" target="_blank" rel="noopener">GCC 手册</a>。</p>
+<p>您可以将一些预先配置好的构建配置添加到 <code>bazel build</code> 命令中，例如：</p>
 <ul>
-<li><p><code>__getslice__</code> (self, i, j) obj[-1:1]</p>
-</li>
-<li><p><code>__setslice__</code> (self, i, j, sequence) obj[0:1] = [11,22,33,44]</p>
-</li>
-<li><p><code>__delslice__</code> (self, i, j) del obj[0:2]</p>
-</li>
-<li><p><code>__iter__</code> 迭代器</p>
-</li>
-<li><p><code>__next__</code> 配合<code>__iter__</code>实现类的interable属性</p>
-</li>
-<li><p><code>__new__</code>方法<code>__new__(cls, name, bases, attrs)</code> 类准备将自身实例化时调用，在<code>__init__()</code>调用之前调用<code>__new__（）</code>，该方法是一个类方法@classmethod</p>
-<p> cls：当前准备创建的类的对象:type</p>
-<p> name：类的名字:str</p>
-<p> bases：类继承的父类集合:class</p>
-<p> attrs：类的方法集合:dict</p>
-</li>
-<li><p><code>__metaclass__</code> 该属性定义一个类的元类，即表示类该有哪个类（元类）来实例化</p>
-</li>
+<li><code>--config=mkl</code> - 支持 <a href="https://github.com/intel/mkl-dnn" target="_blank" rel="noopener">Intel® MKL-DNN</a>。</li>
+<li><code>--config=monolithic</code> - 此配置适用于基本保持静态的单体构建。</li>
 </ul>
-</blockquote>
-<h3 id="创建类的两种方法"><a href="#创建类的两种方法" class="headerlink" title="创建类的两种方法"></a>创建类的两种方法</h3><blockquote>
-<p>1.普通方法<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="class"><span class="keyword">class</span> <span class="title">Object</span><span class="params">(object)</span>:</span></span><br><span class="line">&gt;<span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">(self)</span>:</span></span><br><span class="line">&gt;   print(<span class="string">'hello world!'</span>)</span><br><span class="line">&gt;object = Object()</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<blockquote>
-<p>2.特殊方法（元类type构造对象）</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">(self)</span>:</span></span><br><span class="line">&gt;   print(<span class="string">'Hello world!'</span>)</span><br><span class="line">&gt;   object = type(<span class="string">'Object'</span>, (object,), &#123;<span class="string">'func'</span>:func&#125;)</span><br><span class="line">&gt;<span class="comment">#arg1:str 类名 ;arg2:tuple 基类; arg3:dict 成员;</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<p><strong><em>类的创建过程</em></strong><br><img src="file:///C:/Users/LiuQixuan/Desktop/pypro/type_class.png" alt="类的创建过程"><br>【CODE】</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="class"><span class="keyword">class</span> <span class="title">MyType</span><span class="params">(type)</span>:</span></span><br><span class="line">&gt;    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, what, bases=None, dict=None)</span>:</span></span><br><span class="line">&gt;        super(MyType, self).__init__(what, bases, dict)</span><br><span class="line">&gt;</span><br><span class="line">&gt;    <span class="function"><span class="keyword">def</span> <span class="title">__call__</span><span class="params">(self, *args, **kwargs)</span>:</span></span><br><span class="line">&gt;        obj = self.__new__(self, *args, **kwargs)</span><br><span class="line">&gt;        self.__init__(obj)</span><br><span class="line">&gt;<span class="class"><span class="keyword">class</span> <span class="title">Foo</span><span class="params">(object)</span>:</span></span><br><span class="line">&gt;    __metaclass__ = MyType</span><br><span class="line">&gt;    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name)</span>:</span></span><br><span class="line">&gt;        self.name = name</span><br><span class="line">&gt;    <span class="function"><span class="keyword">def</span> <span class="title">__new__</span><span class="params">(cls, *args, **kwargs)</span>:</span></span><br><span class="line">&gt;        <span class="keyword">return</span> object.__new__(cls, *args, **kwargs)</span><br><span class="line">&gt;<span class="comment"># 第一阶段：解释器从上到下执行代码创建Foo类</span></span><br><span class="line">&gt;<span class="comment"># 第二阶段：通过Foo类创建obj对象</span></span><br><span class="line">&gt;obj = Foo()</span><br><span class="line">&gt;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<h3 id="使用枚举类-枚举类不可比较大小，但是同一枚举类的成员可以做等值is-not-is判断"><a href="#使用枚举类-枚举类不可比较大小，但是同一枚举类的成员可以做等值is-not-is判断" class="headerlink" title="使用枚举类(枚举类不可比较大小，但是同一枚举类的成员可以做等值is / not is判断)"></a>使用枚举类(枚举类不可比较大小，但是同一枚举类的成员可以做等值is / not is判断)</h3><blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="keyword">from</span> enum <span class="keyword">import</span> Enum</span><br><span class="line">&gt;month = Enum(<span class="string">'Mouth'</span>,(<span class="string">'Jan'</span>, <span class="string">'Feb'</span>, <span class="string">'Mar'</span>, <span class="string">'Apr'</span>, <span class="string">'May'</span>, <span class="string">'Jun'</span>, <span class="string">'Jul'</span>, <span class="string">'Aug'</span>, <span class="string">'Sep'</span>, <span class="string">'Oct'</span>, <span class="string">'Nov'</span>, <span class="string">'Dec'</span>))</span><br><span class="line">&gt;<span class="keyword">for</span> name ,member <span class="keyword">in</span> month.__members__.items():</span><br><span class="line">&gt;   print(<span class="string">f'<span class="subst">&#123;name&#125;</span>=&gt;<span class="subst">&#123;member&#125;</span>=&gt;<span class="subst">&#123;member.value&#125;</span>'</span>)</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<h3 id="定义枚举类"><a href="#定义枚举类" class="headerlink" title="定义枚举类"></a>定义枚举类</h3><blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="keyword">from</span> enum <span class="keyword">import</span> Enum, unique</span><br><span class="line">&gt;@unique<span class="comment">#unique装饰器帮助检查Enum内部字段，保证字段不重复</span></span><br><span class="line">&gt;<span class="class"><span class="keyword">class</span> <span class="title">My_weekday</span><span class="params">(Enum)</span>:</span></span><br><span class="line">&gt;   Sun = <span class="number">0</span></span><br><span class="line">&gt;   Mon = <span class="number">1</span></span><br><span class="line">&gt;   Tue = <span class="number">2</span></span><br><span class="line">&gt;   Wed = <span class="number">3</span></span><br><span class="line">&gt;   Thu = <span class="number">4</span></span><br><span class="line">&gt;   Fri = <span class="number">5</span></span><br><span class="line">&gt;   Sat = <span class="number">6</span> </span><br><span class="line">&gt;my_weekday = My_weekday()<span class="comment">#my_weekday.Sun</span></span><br><span class="line">&gt;print(my_weekday.Sun)<span class="comment">#my_weekday.Sun</span></span><br><span class="line">&gt;print(my_weekday[<span class="string">'Sun'</span>])<span class="comment">#my_weekday.Sun</span></span><br><span class="line">&gt;print(my_weekday(<span class="number">0</span>))<span class="comment">#my_weekday.Sun</span></span><br><span class="line">&gt;print(my_weekday.Sun.value)<span class="comment">#0</span></span><br><span class="line">&gt;<span class="keyword">for</span> name, member <span class="keyword">in</span> my_weekday.__members__.item():</span><br><span class="line">&gt;   print(<span class="string">f'<span class="subst">&#123;name&#125;</span> <span class="subst">&#123;member&#125;</span> <span class="subst">&#123;member.value&#125;</span>'</span>)</span><br><span class="line">&gt;【output】</span><br><span class="line">&gt;<span class="string">"""</span></span><br><span class="line"><span class="string">&gt;Sun  My_weekday.Sun 0</span></span><br><span class="line"><span class="string">&gt;Mon  My_weekday.Mon 1</span></span><br><span class="line"><span class="string">&gt;Tue  My_weekday.Tue 2</span></span><br><span class="line"><span class="string">&gt;Wed  My_weekday.Wed 3</span></span><br><span class="line"><span class="string">&gt;Thu  My_weekday.Thu 4</span></span><br><span class="line"><span class="string">&gt;Fri  My_weekday.Fri 5</span></span><br><span class="line"><span class="string">&gt;Sat  My_weekday.Sat 6</span></span><br><span class="line"><span class="string">&gt;"""</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<h2 id="高级面向对象"><a href="#高级面向对象" class="headerlink" title="高级面向对象"></a>高级面向对象</h2><h3 id="元类types"><a href="#元类types" class="headerlink" title="元类types"></a>元类types</h3><blockquote>
-<p>动态地给对象添加方法(MethodType(func[, object/None], Object))<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="keyword">from</span> types <span class="keyword">import</span> MethodType</span><br><span class="line">&gt;</span><br><span class="line">&gt;<span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">(self, value)</span>:</span></span><br><span class="line">&gt;   self.age = value</span><br><span class="line">&gt;<span class="class"><span class="keyword">class</span> <span class="title">Student</span><span class="params">(object)</span>:</span></span><br><span class="line">&gt;   <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self,name)</span>:</span></span><br><span class="line">&gt;       self.name = name</span><br><span class="line">&gt;student = Student(<span class="string">'Bob'</span>)</span><br><span class="line">&gt;student.age_setter = MethodType(age_setter,func)</span><br><span class="line">&gt;student.age_setter(<span class="number">21</span>)</span><br><span class="line">&gt;print(<span class="string">f'<span class="subst">&#123;student.name&#125;</span>is <span class="subst">&#123;student.age&#125;</span> years old.'</span>)</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<blockquote>
-<p>动态的给类添加方法<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">(self, value)</span>:</span></span><br><span class="line">&gt;   self.age = value</span><br><span class="line">&gt;<span class="class"><span class="keyword">class</span> <span class="title">Student</span><span class="params">(object)</span>:</span></span><br><span class="line">&gt;   <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self,name)</span>:</span></span><br><span class="line">&gt;       self.name = name</span><br><span class="line">&gt;Student.age_setter = func</span><br><span class="line">&gt;Student.age_setter = MethodType(func, <span class="literal">None</span>, Student)</span><br><span class="line">&gt;student = Student(<span class="string">'Bob'</span>)</span><br><span class="line">&gt;student.age_setter(<span class="number">21</span>)</span><br><span class="line">&gt;print(<span class="string">f'<span class="subst">&#123;student.name&#125;</span>is <span class="subst">&#123;student.age&#125;</span> years old.'</span>)</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<h3 id="元类type构造对象"><a href="#元类type构造对象" class="headerlink" title="元类type构造对象"></a>元类type构造对象</h3><blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">(self)</span>:</span></span><br><span class="line">&gt;   print(<span class="string">'Hello world!'</span>)</span><br><span class="line">&gt;object = type(<span class="string">'Object'</span>, (object,), &#123;<span class="string">'func'</span>:func&#125;)</span><br><span class="line">&gt;<span class="comment">#arg1:str 类名 ;arg2:tuple 基类; arg3:dict('a' = a, 'b' = b...) 类变量/静态字段;</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<h3 id="使用Slot限制添加属性"><a href="#使用Slot限制添加属性" class="headerlink" title="使用Slot限制添加属性"></a>使用Slot限制添加属性</h3><blockquote>
-<p>slot是一个特殊静态字段,tuple类型.slot只对当前类起作用，对其子类并不起作用<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="class"><span class="keyword">class</span> <span class="title">Student</span><span class="params">(object)</span>:</span></span><br><span class="line">&gt;       __slot__ = (<span class="string">'name'</span>, <span class="string">'age'</span>)</span><br><span class="line">&gt;       <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, name, age)</span>:</span></span><br><span class="line">&gt;           super(Student,self).__init__()</span><br><span class="line">&gt;           self.name = name</span><br><span class="line">&gt;           self.age = age</span><br><span class="line">&gt;       @property</span><br><span class="line">&gt;       <span class="function"><span class="keyword">def</span> <span class="title">name</span><span class="params">(self)</span>:</span></span><br><span class="line">&gt;           <span class="keyword">return</span> self.name</span><br><span class="line">&gt;</span><br><span class="line">&gt;       @name.setter</span><br><span class="line">&gt;       <span class="function"><span class="keyword">def</span> <span class="title">name</span><span class="params">(self,name)</span>:</span></span><br><span class="line">&gt;           self.name = name</span><br><span class="line">&gt;</span><br><span class="line">&gt;       @property</span><br><span class="line">&gt;       <span class="function"><span class="keyword">def</span> <span class="title">age</span><span class="params">(self)</span>:</span></span><br><span class="line">&gt;           <span class="keyword">return</span> self.age</span><br><span class="line">&gt;</span><br><span class="line">&gt;       @age.setter</span><br><span class="line">&gt;       <span class="function"><span class="keyword">def</span> <span class="title">age</span><span class="params">(self,name)</span>:</span></span><br><span class="line">&gt;           self.age = age</span><br><span class="line">&gt;s1 = Student(<span class="string">'Bill'</span>,<span class="number">21</span>)</span><br><span class="line">&gt;s1.score = <span class="number">89</span>                [ERROR]:不能添加score字段</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<h3 id="装饰器"><a href="#装饰器" class="headerlink" title="装饰器"></a>装饰器</h3><blockquote>
-<p>一般装饰器（@decorate）<br>描述符装饰器</p>
-<blockquote>
-<p>实现了<br><figure class="highlight plain"><figcaption><span>__set__() __del__()```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;```@property @func.setter @func.deleter</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>数据描述符（实现了get set）<br>非数据描述符（只实现get 没有实现set)</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h3 id="python垃圾回收机制"><a href="#python垃圾回收机制" class="headerlink" title="python垃圾回收机制"></a>python垃圾回收机制</h3><blockquote>
-<ul>
-<li>引用计数器（当一个对象被引用机会增加其引用计数，当不被引用时减少引用计数，减少至0时在合适的时机下内存被回收）</li>
-<li>循环垃圾收集器（针对循环引用）</li>
-<li>手动内存回收 del obj.obj (将引用计数置零，只有最后引用该内存的对象释放后才执行析构函数<strong>del</strong>())</li>
+<p><strong>注意</strong>：从 TensorFlow 1.6 开始，二进制文件使用 AVX 指令，这些指令可能无法在旧版 CPU 上运行。</p>
+<p>构建 pip 软件包</p>
+<p>Bazel 构建</p>
+<p>仅支持 CPU</p>
+<p>使用 <code>bazel</code> 构建仅支持 CPU 的 TensorFlow 软件包构建器：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bazel build --config=opt //tensorflow/tools/pip_package:build_pip_package</span><br></pre></td></tr></table></figure>
+<p>GPU 支持</p>
+<p>要构建支持 GPU 的 TensorFlow 软件包构建器，请运行以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bazel build --config=opt --config=cuda //tensorflow/tools/pip_package:build_pip_package</span><br></pre></td></tr></table></figure>
+<p>Bazel 构建选项</p>
+<p>从源代码构建 TensorFlow 可能会消耗大量内存。如果系统内存有限，请使用以下命令限制 Bazel 的内存消耗量：<code>--local_resources 2048,.5,1.0</code>。</p>
+<p><a href="https://tensorflow.google.cn/install/pip" target="_blank" rel="noopener">官方 TensorFlow 软件包</a>是使用 GCC 4 构建的，并使用旧版 ABI。对于 GCC 5 及更高版本，为了使您的构建与旧版 ABI 兼容，请使用 <code>--cxxopt=&quot;-D_GLIBCXX_USE_CXX11_ABI=0&quot;</code>。兼容 ABI 可确保针对官方 TensorFlow pip 软件包构建的自定义操作继续支持使用 GCC 5 构建的软件包。</p>
+<p>构建软件包</p>
+<p><code>bazel build</code> 命令会创建一个名为 <code>build_pip_package</code> 的可执行文件，此文件是用于构建 <code>pip</code> 软件包的程序。例如，以下命令会在 <code>/tmp/tensorflow_pkg</code> 目录中构建 <code>.whl</code> 软件包：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg</span><br></pre></td></tr></table></figure>
+<p>尽管可以在同一个源代码树下构建 CUDA 和非 CUDA 配置，但建议您在同一个源代码树中的这两种配置之间切换时运行 <code>bazel clean</code>。</p>
+<p>安装软件包</p>
+<p>生成的 <code>.whl</code> 文件的文件名取决于 TensorFlow 版本和您的平台。例如，使用 <code>pip install</code> 安装软件包：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install /tmp/tensorflow_pkg/tensorflow-version-tags.whl</span><br></pre></td></tr></table></figure>
+<p><strong>成功</strong>：TensorFlow 现已安装完毕。</p>
+<p>Docker Linux 构建</p>
+<p>借助 TensorFlow 的 Docker 开发映像，您可以轻松设置环境，以从源代码构建 Linux 软件包。这些映像已包含构建 TensorFlow 所需的源代码和依赖项。要了解安装说明和<a href="https://hub.docker.com/r/tensorflow/tensorflow/tags/" target="_blank" rel="noopener">可用映像标记的列表</a>，请参阅 TensorFlow <a href="https://tensorflow.google.cn/install/docker" target="_blank" rel="noopener">Docker 指南</a>。</p>
+<h4 id="Windows-从源码构建"><a href="#Windows-从源码构建" class="headerlink" title="Windows 从源码构建"></a>Windows 从源码构建</h4><p>Windows 设置</p>
+<p>安装以下构建工具以配置 Windows 开发环境。</p>
+<p>安装 Python 和 TensorFlow 软件包依赖项</p>
+<p>安装<a href="https://www.python.org/downloads/windows/" target="_blank" rel="noopener">适用于 Windows 的 Python 3.5.x 或 Python 3.6.x 64 位版本</a>。选择 pip 作为可选功能，并将其添加到 <code>%PATH%</code> 环境变量中。</p>
+<p>安装 TensorFlow pip 软件包依赖项：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pip3 install six numpy wheel</span><br><span class="line">pip3 install keras_applications==1.0.5 --no-deps</span><br><span class="line">pip3 install keras_preprocessing==1.0.3 --no-deps</span><br></pre></td></tr></table></figure>
+<p>这些依赖项列在 <code>REQUIRED_PACKAGES</code> 下的 <a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/pip_package/setup.py" target="_blank" rel="noopener"><code>setup.py</code></a> 文件中。</p>
+<p>安装 Bazel</p>
+<p><a href="https://docs.bazel.build/versions/master/install-windows.html" target="_blank" rel="noopener">安装 Bazel</a>，它是用于编译 TensorFlow 的构建工具。</p>
+<p>将 Bazel 可执行文件的位置添加到 <code>%PATH%</code> 环境变量中。</p>
+<p>安装 MSYS2</p>
+<p>为构建 TensorFlow 所需的 bin 工具<a href="https://www.msys2.org/" target="_blank" rel="noopener">安装 MSYS2</a>。如果 MSYS2 已安装到 <code>C:\msys64</code> 下，请将 <code>C:\msys64\usr\bin</code>添加到 <code>%PATH%</code> 环境变量中。然后，使用 <code>cmd.exe</code> 运行以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -S git patch unzip</span><br></pre></td></tr></table></figure>
+<p>安装 Visual C++ 生成工具 2015</p>
+<p>安装 Visual C++ 生成工具 2015。此软件包随附在 Visual Studio 2015 中，但可以单独安装：</p>
+<ol>
+<li>转到 <a href="https://visualstudio.microsoft.com/vs/older-downloads/" target="_blank" rel="noopener">Visual Studio 下载页面</a>，</li>
+<li>选择“可再发行组件和生成工具”，</li>
+<li>下载并安装：<ul>
+<li><em>Microsoft Visual C++ 2015 Redistributable 更新 3</em></li>
+<li><em>Microsoft 生成工具 2015 更新 3</em></li>
 </ul>
-</blockquote>
-<h2 id="python-异常（Exception）、调试（Debug）、回溯（Traceback"><a href="#python-异常（Exception）、调试（Debug）、回溯（Traceback" class="headerlink" title="python 异常（Exception）、调试（Debug）、回溯（Traceback)"></a>python 异常（Exception）、调试（Debug）、回溯（Traceback)</h2><h3 id="异常（Exception）"><a href="#异常（Exception）" class="headerlink" title="异常（Exception）"></a>异常（Exception）</h3><blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&gt;</span><br><span class="line">&gt;<span class="keyword">try</span>:</span><br><span class="line">&gt;   <span class="keyword">pass</span></span><br><span class="line">&gt;<span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">&gt;   <span class="keyword">raise</span></span><br><span class="line">&gt;<span class="keyword">else</span>:</span><br><span class="line">&gt;   <span class="keyword">pass</span></span><br><span class="line">&gt;<span class="keyword">finally</span>:</span><br><span class="line">&gt;   <span class="keyword">pass</span></span><br><span class="line">&gt;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<h4 id="常见的异常："><a href="#常见的异常：" class="headerlink" title="常见的异常："></a>常见的异常：</h4><blockquote>
-<table>
+</li>
+</ol>
+<p><strong>注意</strong>：TensorFlow 针对 Visual Studio 2015 更新 3 进行了测试。</p>
+<p>安装 GPU 支持（可选）</p>
+<p>要安装在 GPU 上运行 TensorFlow 所需的驱动程序和其他软件，请参阅 Windows <a href="https://tensorflow.google.cn/install/gpu" target="_blank" rel="noopener">GPU 支持</a>指南。</p>
+<p>下载 TensorFlow 源代码</p>
+<p>使用 <a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a> 克隆 <a href="https://github.com/tensorflow/tensorflow" target="_blank" rel="noopener">TensorFlow 代码库</a>（<code>git</code> 随 MSYS2 一起安装）：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/tensorflow/tensorflow.git</span><br><span class="line">cd tensorflow</span><br></pre></td></tr></table></figure>
+<p>代码库默认为 <code>master</code> 开发分支。您也可以检出要构建的<a href="https://github.com/tensorflow/tensorflow/releases" target="_blank" rel="noopener">版本分支</a>：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout branch_name  # r1.9, r1.10, etc.</span><br></pre></td></tr></table></figure>
+<p><strong>要点</strong>：如果您在使用最新的开发分支时遇到构建问题，请尝试已知可用的版本分支。</p>
+<p>配置构建</p>
+<p>通过在 TensorFlow 源代码树的根目录下运行以下命令来配置系统构建：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python ./configure.py</span><br></pre></td></tr></table></figure>
+<p>此脚本会提示您指定 TensorFlow 依赖项的位置，并要求指定其他构建配置选项（例如，编译器标记）。以下代码展示了 <code>python ./configure.py</code> 的示例运行会话（您的会话可能会有所不同）：</p>
+<p>查看示例配置会话</p>
+<p>配置选项</p>
+<p>对于 <a href="https://tensorflow.google.cn/install/gpu" target="_blank" rel="noopener">GPU 支持</a>，请指定 CUDA 和 cuDNN 的版本。如果您的系统安装了多个 CUDA 或 cuDNN 版本，请明确设置版本而不是依赖于默认版本。<code>./configure.py</code> 会创建指向系统 CUDA 库的符号链接，因此，如果您更新 CUDA 库路径，则必须在构建之前再次运行此配置步骤。</p>
+<p><strong>注意</strong>：从 TensorFlow 1.6 开始，二进制文件使用 AVX 指令，这些指令可能无法在旧版 CPU 上运行。</p>
+<p>构建 pip 软件包</p>
+<p>Bazel 构建</p>
+<p>仅支持 CPU</p>
+<p>使用 <code>bazel</code> 构建仅支持 CPU 的 TensorFlow 软件包构建器：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bazel build --config=opt //tensorflow/tools/pip_package:build_pip_package</span><br></pre></td></tr></table></figure>
+<p>GPU 支持</p>
+<p>要构建支持 GPU 的 TensorFlow 软件包构建器，请运行以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bazel build --config=opt --config=cuda //tensorflow/tools/pip_package:build_pip_package</span><br></pre></td></tr></table></figure>
+<p>Bazel 构建选项</p>
+<p>从源代码构建 TensorFlow 可能会消耗大量内存。如果系统内存有限，请使用以下命令限制 Bazel 的内存消耗量：<code>--local_resources 2048,.5,1.0</code>。</p>
+<p>如果构建支持 GPU 的 TensorFlow，请添加 <code>--copt=-nvcc_options=disable-warnings</code> 以禁止显示 nvcc 警告消息。</p>
+<p>构建软件包</p>
+<p><code>bazel build</code> 命令会创建一个名为 <code>build_pip_package</code> 的可执行文件，此文件是用于构建 <code>pip</code> 软件包的程序。例如，以下命令会在 <code>C:/tmp/tensorflow_pkg</code> 目录中构建 <code>.whl</code> 软件包：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bazel-bin\tensorflow\tools\pip_package\build_pip_package C:/tmp/tensorflow_pkg</span><br></pre></td></tr></table></figure>
+<p>尽管可以在同一个源代码树下构建 CUDA 和非 CUDA 配置，但建议您在同一个源代码树中的这两种配置之间切换时运行 <code>bazel clean</code>。</p>
+<p>安装软件包</p>
+<p>生成的 <code>.whl</code> 文件的文件名取决于 TensorFlow 版本和您的平台。例如，使用 <code>pip3 install</code> 安装软件包：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install C:/tmp/tensorflow_pkg/tensorflow-version-cp36-cp36m-win_amd64.whl</span><br></pre></td></tr></table></figure>
+<p><strong>成功</strong>：TensorFlow 现已安装完毕。</p>
+<p>使用 MSYS shell 构建</p>
+<p>也可以使用 MSYS shell 构建 TensorFlow。做出下面列出的更改，然后按照之前的 Windows 原生命令行 (<code>cmd.exe</code>) 说明进行操作。</p>
+<p>停用 MSYS 路径转换</p>
+<p>MSYS 会自动将类似 Unix 路径的参数转换为 Windows 路径，此转换不适用于 <code>bazel</code>。（标签 <code>//foo/bar:bin</code> 被视为 Unix 绝对路径，因为它以斜杠开头。）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export MSYS_NO_PATHCONV=1</span><br><span class="line">export MSYS2_ARG_CONV_EXCL=&quot;*&quot;</span><br></pre></td></tr></table></figure>
+<p>设置 PATH</p>
+<p>将 Bazel 和 Python 安装目录添加到 <code>$PATH</code> 环境变量中。如果 Bazel 安装到了 <code>C:\tools\bazel.exe</code>，并且 Python 安装到了 <code>C:\Python36\python.exe</code>，请使用以下命令设置 <code>PATH</code>：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Use Unix-style with &apos;:&apos; as separator</span><br><span class="line">export PATH=&quot;/c/tools:$PATH&quot;</span><br><span class="line">export PATH=&quot;/c/Python36:$PATH&quot;</span><br></pre></td></tr></table></figure>
+<p>要启用 GPU 支持，请将 CUDA 和 cuDNN bin 目录添加到 <code>$PATH</code> 中：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export PATH=&quot;/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v9.0/bin:$PATH&quot;export PATH=&quot;/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v9.0/extras/CUPTI/libx64:$PATH&quot;export PATH=&quot;/c/tools/cuda/bin:$PATH&quot;</span><br></pre></td></tr></table></figure>
+<h4 id="使用Python自带的pip包管理工具安装"><a href="#使用Python自带的pip包管理工具安装" class="headerlink" title="使用Python自带的pip包管理工具安装"></a>使用Python自带的pip包管理工具安装</h4><p>执行<code>pip install tensorflow ==&#39;x.xx&#39;`</code>pip install tensorflow-gpu ==’x.xx’`</p>
+<p>linux 执行<code>sudo pip install tensorflow ==&#39;x.xx&#39;`</code>sudo pip install tensorflow-gpu ==’x.xx’`</p>
+<h2 id="重点TensorFlow-GPU-与CUDA-及cudnn-版本参照表"><a href="#重点TensorFlow-GPU-与CUDA-及cudnn-版本参照表" class="headerlink" title="重点TensorFlow-GPU 与CUDA 及cudnn 版本参照表"></a>重点TensorFlow-GPU 与CUDA 及cudnn 版本参照表</h2><table>
 <thead>
 <tr>
-<th>异常名称</th>
-<th>描述</th>
+<th style="text-align:left">版本</th>
+<th style="text-align:left">Python 版本</th>
+<th style="text-align:left">cuDNN</th>
+<th style="text-align:left">CUDA</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>BaseException</td>
-<td>所有异常K的基类</td>
+<td style="text-align:left">tensorflow_gpu-1.12.0</td>
+<td style="text-align:left">3.5-3.6</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left">9</td>
 </tr>
 <tr>
-<td>SystemExit</td>
-<td>解释器请求退出</td>
+<td style="text-align:left">tensorflow_gpu-1.11.0</td>
+<td style="text-align:left">3.5-3.6</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left">9</td>
 </tr>
 <tr>
-<td>KeyboardInterrupt</td>
-<td>用户自行中断执行^C</td>
+<td style="text-align:left">tensorflow_gpu-1.10.0</td>
+<td style="text-align:left">3.5-3.6</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left">9</td>
 </tr>
 <tr>
-<td>Exception</td>
-<td>常规错误的基类</td>
+<td style="text-align:left">tensorflow_gpu-1.9.0</td>
+<td style="text-align:left">3.5-3.6</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left">9</td>
 </tr>
 <tr>
-<td>StopIteration</td>
-<td>迭代器溢出</td>
+<td style="text-align:left">tensorflow_gpu-1.8.0</td>
+<td style="text-align:left">3.5-3.6</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left">9</td>
 </tr>
 <tr>
-<td>GeneratorExit</td>
-<td>生成器发生异常后通知退出</td>
+<td style="text-align:left">tensorflow_gpu-1.7.0</td>
+<td style="text-align:left">3.5-3.6</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left">9</td>
 </tr>
 <tr>
-<td>StandardError</td>
-<td>所有标准异常类的基类</td>
+<td style="text-align:left">tensorflow_gpu-1.6.0</td>
+<td style="text-align:left">3.5-3.6</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left">9</td>
 </tr>
 <tr>
-<td>ArithmeticError</td>
-<td>所有数值计算错误的基类</td>
+<td style="text-align:left">tensorflow_gpu-1.5.0</td>
+<td style="text-align:left">3.5-3.6</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left">9</td>
 </tr>
 <tr>
-<td>FloattingPointError</td>
-<td>浮点计算错误</td>
+<td style="text-align:left">tensorflow_gpu-1.4.0</td>
+<td style="text-align:left">3.5-3.6</td>
+<td style="text-align:left">6</td>
+<td style="text-align:left">8</td>
 </tr>
 <tr>
-<td>OverflowError</td>
-<td>数值运算溢出</td>
+<td style="text-align:left">tensorflow_gpu-1.3.0</td>
+<td style="text-align:left">3.5-3.6</td>
+<td style="text-align:left">6</td>
+<td style="text-align:left">8</td>
 </tr>
 <tr>
-<td>ZeroDivisionError</td>
-<td>除[,取模]by0</td>
+<td style="text-align:left">tensorflow_gpu-1.2.0</td>
+<td style="text-align:left">3.5-3.6</td>
+<td style="text-align:left">5.1</td>
+<td style="text-align:left">8</td>
 </tr>
 <tr>
-<td>AssertionError</td>
-<td>断言语句失败</td>
+<td style="text-align:left">tensorflow_gpu-1.1.0</td>
+<td style="text-align:left">3.5</td>
+<td style="text-align:left">5.1</td>
+<td style="text-align:left">8</td>
 </tr>
 <tr>
-<td>AttributeError</td>
-<td>对象缺失该属性</td>
-</tr>
-<tr>
-<td>EOFError</td>
-<td>没有内建输入，到达EOF标记</td>
-</tr>
-<tr>
-<td>EnvironmentError</td>
-<td>操作系统错误的基类</td>
-</tr>
-<tr>
-<td>IOError</td>
-<td>输入/输出操作失败</td>
-</tr>
-<tr>
-<td>OSError</td>
-<td>操作系统错误</td>
-</tr>
-<tr>
-<td>WindowsError</td>
-<td>系统调用失败</td>
-</tr>
-<tr>
-<td>ImportError</td>
-<td>导入模块/对象失败</td>
-</tr>
-<tr>
-<td>LookupError</td>
-<td>无效数据查询的基类</td>
-</tr>
-<tr>
-<td>IndexError</td>
-<td>序列中没有此索引</td>
-</tr>
-<tr>
-<td>KeyError</td>
-<td>映射中没有此键</td>
-</tr>
-<tr>
-<td>MemoryError</td>
-<td>内存溢出（对于Python解释起来说非致命）</td>
-</tr>
-<tr>
-<td>NameError</td>
-<td>未声明/初始化对象</td>
-</tr>
-<tr>
-<td>UnboundLocalError</td>
-<td>访问未初始化的本地变量</td>
-</tr>
-<tr>
-<td>ReferenceError</td>
-<td>试图访问已被回收器回收的对象（弱引用）</td>
-</tr>
-<tr>
-<td>RuntimeError</td>
-<td>一般运行时错误</td>
-</tr>
-<tr>
-<td>NotImplementedError</td>
-<td>尚未实现的方法</td>
-</tr>
-<tr>
-<td>SyntaxError</td>
-<td>Python语法错误</td>
-</tr>
-<tr>
-<td>IndentationError</td>
-<td>缩进错误</td>
-</tr>
-<tr>
-<td>TabError</td>
-<td>Tab和Space混用</td>
-</tr>
-<tr>
-<td>SystemError</td>
-<td>一般的解释器系统错误</td>
-</tr>
-<tr>
-<td>TypeError</td>
-<td>对类型无效的操作</td>
-</tr>
-<tr>
-<td>ValueError</td>
-<td>传入无效的参数</td>
-</tr>
-<tr>
-<td>UnicodeError</td>
-<td>Unicode相关错误</td>
-</tr>
-<tr>
-<td>UnicodeDecodeError</td>
-<td>Unicode解码时的错误</td>
-</tr>
-<tr>
-<td>UnicodeEncodeError</td>
-<td>Unicode编码时的错误</td>
-</tr>
-<tr>
-<td>UnicodeTranslateError</td>
-<td>Unicode转码时的错误</td>
-</tr>
-<tr>
-<td>Warning</td>
-<td>警告的基类</td>
-</tr>
-<tr>
-<td>DeprecationWarning</td>
-<td>关于被弃用的特性的警告</td>
-</tr>
-<tr>
-<td>FutureWarning</td>
-<td>关于构造将来语义会有改变的警告</td>
-</tr>
-<tr>
-<td>OverflowWarning</td>
-<td>旧的关于自动提升为长整型(long)的警告</td>
-</tr>
-<tr>
-<td>pendingDeprecationWarning</td>
-<td>关于特性将会被废弃的警告</td>
-</tr>
-<tr>
-<td>RuntimeWarning</td>
-<td>可疑的运行时行为的警告</td>
-</tr>
-<tr>
-<td>SysntaxWarning</td>
-<td>可疑语法的警告</td>
-</tr>
-<tr>
-<td>UserWarning</td>
-<td>用户代码生成的警告</td>
+<td style="text-align:left">tensorflow_gpu-1.0.0</td>
+<td style="text-align:left">3.5</td>
+<td style="text-align:left">5.1</td>
+<td style="text-align:left">8</td>
 </tr>
 </tbody>
 </table>
-</blockquote>
-</blockquote>
-<h3 id="调试（Debug）"><a href="#调试（Debug）" class="headerlink" title="调试（Debug）"></a>调试（Debug）</h3><blockquote>
-<h4 id="单元测试"><a href="#单元测试" class="headerlink" title="单元测试"></a>单元测试</h4><blockquote>
-<p>单元测试的类在unittest包中使用时直接导入包<code>import unittest</code>.</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;<span class="keyword">import</span> unittest</span><br><span class="line">&gt;&gt;<span class="class"><span class="keyword">class</span> <span class="title">TestClass</span><span class="params">(unitest.TestCase)</span>:</span></span><br><span class="line">&gt;&gt;  <span class="function"><span class="keyword">def</span> <span class="title">setUp</span><span class="params">(self)</span>:</span></span><br><span class="line">&gt;&gt;        <span class="keyword">pass</span></span><br><span class="line">&gt;&gt;    <span class="function"><span class="keyword">def</span> <span class="title">tearDown</span><span class="params">(self)</span>:</span></span><br><span class="line">&gt;&gt;        <span class="keyword">pass</span></span><br><span class="line">&gt;&gt;    <span class="function"><span class="keyword">def</span> <span class="title">test_init</span><span class="params">(self)</span>:</span></span><br><span class="line">&gt;&gt;        self.assertEqual()</span><br><span class="line">&gt;&gt;        self.assertTrue()</span><br><span class="line">&gt;&gt;        self.assertRaises()</span><br><span class="line">&gt;&gt;    <span class="function"><span class="keyword">def</span> <span class="title">test_func1</span><span class="params">(self)</span>:</span></span><br><span class="line">&gt;&gt;        <span class="keyword">pass</span></span><br><span class="line">&gt;&gt;    <span class="function"><span class="keyword">def</span> <span class="title">test_func2</span><span class="params">(self)</span>:</span></span><br><span class="line">&gt;&gt;        <span class="keyword">pass</span></span><br><span class="line">&gt;&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-</blockquote>
-<blockquote>
-<h4 id="文档测试-doctest"><a href="#文档测试-doctest" class="headerlink" title="文档测试(doctest)"></a>文档测试(doctest)</h4><blockquote>
-<p>Python的文档测试模块可以直接提取注释中的代码并执行</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;<span class="class"><span class="keyword">class</span> <span class="title">Dict</span><span class="params">(dict)</span>:</span></span><br><span class="line">&gt;&gt;    <span class="string">'''</span></span><br><span class="line"><span class="string">&gt;&gt;    Simple dict but also support access as x.y style.</span></span><br><span class="line"><span class="string">&gt;&gt;</span></span><br><span class="line"><span class="string">&gt;&gt;    &gt;&gt;&gt; d1 = Dict()</span></span><br><span class="line"><span class="string">&gt;&gt;    &gt;&gt;&gt; d1['x'] = 100</span></span><br><span class="line"><span class="string">&gt;&gt;    &gt;&gt;&gt; d1.x</span></span><br><span class="line"><span class="string">&gt;&gt;    100</span></span><br><span class="line"><span class="string">&gt;&gt;    &gt;&gt;&gt; d1.y = 200</span></span><br><span class="line"><span class="string">&gt;&gt;    &gt;&gt;&gt; d1['y']</span></span><br><span class="line"><span class="string">&gt;&gt;    200</span></span><br><span class="line"><span class="string">&gt;&gt;    &gt;&gt;&gt; d2 = Dict(a=1, b=2, c='3')</span></span><br><span class="line"><span class="string">&gt;&gt;    &gt;&gt;&gt; d2.c</span></span><br><span class="line"><span class="string">&gt;&gt;    '3'</span></span><br><span class="line"><span class="string">&gt;&gt;    &gt;&gt;&gt; d2['empty']</span></span><br><span class="line"><span class="string">&gt;&gt;    Traceback (most recent call last):</span></span><br><span class="line"><span class="string">&gt;&gt;        ...</span></span><br><span class="line"><span class="string">&gt;&gt;    KeyError: 'empty'</span></span><br><span class="line"><span class="string">&gt;&gt;    &gt;&gt;&gt; d2.empty</span></span><br><span class="line"><span class="string">&gt;&gt;    Traceback (most recent call last):</span></span><br><span class="line"><span class="string">&gt;&gt;        ...</span></span><br><span class="line"><span class="string">&gt;&gt;    AttributeError: 'Dict' object has no attribute 'empty'</span></span><br><span class="line"><span class="string">&gt;&gt;    '''</span></span><br><span class="line">&gt;&gt;    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, **kw)</span>:</span></span><br><span class="line">&gt;&gt;        super(Dict, self).__init__(**kw)</span><br><span class="line">&gt;&gt;</span><br><span class="line">&gt;&gt;    <span class="function"><span class="keyword">def</span> <span class="title">__getattr__</span><span class="params">(self, key)</span>:</span></span><br><span class="line">&gt;&gt;        <span class="keyword">try</span>:</span><br><span class="line">&gt;&gt;            <span class="keyword">return</span> self[key]</span><br><span class="line">&gt;&gt;        <span class="keyword">except</span> KeyError:</span><br><span class="line">&gt;&gt;            <span class="keyword">raise</span> AttributeError(<span class="string">r"'Dict' object has no attribute '%s'"</span> % key)</span><br><span class="line">&gt;&gt;</span><br><span class="line">&gt;&gt;    <span class="function"><span class="keyword">def</span> <span class="title">__setattr__</span><span class="params">(self, key, value)</span>:</span></span><br><span class="line">&gt;&gt;        self[key] = value</span><br><span class="line">&gt;&gt;</span><br><span class="line">&gt;&gt;<span class="keyword">if</span> __name__==<span class="string">'__main__'</span>:</span><br><span class="line">&gt;&gt;    <span class="keyword">import</span> doctest</span><br><span class="line">&gt;&gt;    doctest.testmod()</span><br><span class="line">&gt;&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-</blockquote>
-<blockquote>
-</blockquote>
-<h3 id="回溯（Traceback"><a href="#回溯（Traceback" class="headerlink" title="回溯（Traceback)"></a>回溯（Traceback)</h3><blockquote>
-<p>代码<br>以下代码功能相同<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="keyword">import</span> traceback</span><br><span class="line">&gt;</span><br><span class="line">&gt;traceback.print_exc()</span><br><span class="line">&gt;traceback.format_exc()</span><br><span class="line">&gt;traceback.print_exception(*ss.exc_info())</span><br><span class="line">&gt;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<h2 id="with-用法"><a href="#with-用法" class="headerlink" title="with 用法"></a>with 用法</h2><blockquote>
-<p>事前事后用with（前后文管理器）<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&gt;【version <span class="number">1.0</span>】</span><br><span class="line">&gt;file = open(<span class="string">"/src/tmp.txt"</span>)</span><br><span class="line">&gt;data = file.read()</span><br><span class="line">&gt;file.close()  </span><br><span class="line">&gt;<span class="comment">#可能会忘记关闭句柄</span></span><br><span class="line">&gt;<span class="comment">#可能会出现异常</span></span><br><span class="line">&gt;【version <span class="number">2.0</span>】</span><br><span class="line">&gt;file = open(<span class="string">"/src/tmp.txt"</span>)</span><br><span class="line">&gt;<span class="keyword">try</span>:</span><br><span class="line">&gt;data = file.read()</span><br><span class="line">&gt;<span class="keyword">finally</span>:</span><br><span class="line">&gt;file.close()</span><br><span class="line">&gt;<span class="comment">#总体结构安全性都有提升</span></span><br><span class="line">&gt;【version <span class="number">3.0</span> <span class="keyword">with</span>】</span><br><span class="line">&gt;<span class="keyword">with</span> open(<span class="string">"/src/tmp.txt"</span>) <span class="keyword">as</span> file:</span><br><span class="line">&gt;data = file.read()</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<blockquote>
-<p>with 对处理对象需要自定义<code>__enter__() __exit__()</code>方法</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="class"><span class="keyword">class</span> <span class="title">Sample</span>:</span></span><br><span class="line">&gt;<span class="function"><span class="keyword">def</span> <span class="title">__enter__</span><span class="params">(self)</span>:</span></span><br><span class="line">&gt;   print(<span class="string">'function:enter'</span>)</span><br><span class="line">&gt;   <span class="keyword">return</span> <span class="string">"SAMPLE"</span></span><br><span class="line">&gt;    <span class="function"><span class="keyword">def</span> <span class="title">__exit__</span><span class="params">(self, type, value, trace)</span>:</span></span><br><span class="line">&gt;       print(<span class="string">'function:exit'</span>)</span><br><span class="line">&gt;<span class="function"><span class="keyword">def</span> <span class="title">get_sample</span><span class="params">()</span>:</span></span><br><span class="line">&gt;   <span class="keyword">return</span> Sample()</span><br><span class="line">&gt;</span><br><span class="line">&gt;<span class="keyword">with</span> get_sample() <span class="keyword">as</span> sample:</span><br><span class="line">&gt;   print(<span class="string">f'<span class="subst">&#123;sample&#125;</span>do somethings'</span>)</span><br><span class="line">&gt;</span><br><span class="line">&gt;</span><br><span class="line">&gt;[result:]</span><br><span class="line">&gt;function:enter</span><br><span class="line">&gt;SAMPLE do somethings</span><br><span class="line">&gt;function:exit</span><br><span class="line">&gt;</span><br><span class="line">&gt;<span class="class"><span class="keyword">class</span> <span class="title">Sample</span>:</span></span><br><span class="line">&gt;<span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, value)</span>:</span></span><br><span class="line">&gt;   self.num = value</span><br><span class="line">&gt;<span class="function"><span class="keyword">def</span> <span class="title">__enter__</span><span class="params">(self)</span>:</span></span><br><span class="line">&gt;   print(<span class="string">'function:enter'</span>)</span><br><span class="line">&gt;   <span class="keyword">return</span> self</span><br><span class="line">&gt;    <span class="function"><span class="keyword">def</span> <span class="title">__exit__</span><span class="params">(self, type, value, trace)</span>:</span></span><br><span class="line">&gt;       print(<span class="string">'function:exit'</span>)</span><br><span class="line">&gt;       print(<span class="string">'m_type:&#123;type&#125;\tm_value:&#123;value&#125;\ttrace:&#123;trace&#125;)</span></span><br><span class="line"><span class="string">&gt;    def func(self, value):</span></span><br><span class="line"><span class="string">&gt;       return self.num/value</span></span><br><span class="line"><span class="string">&gt;def get_sample(num):</span></span><br><span class="line"><span class="string">&gt;return Sample(num)</span></span><br><span class="line"><span class="string">&gt;</span></span><br><span class="line"><span class="string">&gt;with get_sample() as sample:</span></span><br><span class="line"><span class="string">&gt;   print(f'</span>&#123;sample&#125;do somethings<span class="string">')</span></span><br><span class="line"><span class="string">&gt;   num = input("input a number:")</span></span><br><span class="line"><span class="string">&gt;   sample.func(num)</span></span><br><span class="line"><span class="string">&gt;</span></span><br><span class="line"><span class="string">&gt;</span></span><br><span class="line"><span class="string">&gt;#执行顺序：</span></span><br><span class="line"><span class="string">&gt;#with 后面的函数/或type对象使用类的__init__()创建出一个对象,然后调用__enter__()方法将返回值赋给as 后的变量。在with执行完毕后调用类中的__exit__（）方法，清理或关闭句柄。</span></span><br><span class="line"><span class="string">&gt;</span></span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-<ul>
-<li><code>open</code>(<em>file</em>, <em>mode=’r’</em>, <em>buffering=-1</em>, <em>encoding=None</em>, <em>errors=None</em>, <em>newline=None</em>, <em>closefd=True</em>, <em>opener=None</em>)</li>
-</ul>
-</blockquote>
-<h2 id="f-string-处理-str-，-repr"><a href="#f-string-处理-str-，-repr" class="headerlink" title="f_string 处理__str__，__repr__"></a>f_string 处理<code>__str__，__repr__</code></h2><blockquote>
-<ul>
-<li><code>__str __（）</code>和<code>__repr __（）</code>方法处理对象如何呈现为字符串，因此您需要确保在类定义中包含至少一个这些方法。如果必须选择一个，请使用<code>__repr __（）</code>，因为它可以代替<code>__str __（）</code>。</li>
-<li><code>__str __（）</code>返回的字符串是对象的非正式字符串表示，应该可读。<code>__repr __（）</code>返回的字符串是官方表示，应该是明确的。调用<code>str（）</code>和<code>repr（）</code>比直接使用<code>__str __（）</code>和<code>__repr __（）</code>更好。</li>
-<li>默认情况下，f字符串将使用<code>__str __（）</code>，但如果包含转换标志<code>!r</code>，则可以确保它们使用<code>__repr __（）</code>。</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;<span class="string">f"<span class="subst">&#123;new_comedian&#125;</span>"</span></span><br><span class="line">&gt;<span class="string">'This __str__'</span></span><br><span class="line">&gt;<span class="string">f"<span class="subst">&#123;new_comedian!r&#125;</span>"</span></span><br><span class="line">&gt;<span class="string">'This __repr__'</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<blockquote>
-</blockquote>
+<p>这里经过测试</p>
+<table>
+<thead>
+<tr>
+<th>TensorFlow - GPU</th>
+<th>CUDA</th>
+<th>cuDNN</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tensorflow_gpu-1.12.0</td>
+<td>CUDA 9.0.176</td>
+<td>cuDNNv7.4.2.24 for cuda 9.0</td>
+</tr>
+<tr>
+<td>tensorflow_gpu-1.13.0</td>
+<td>CUDA 10.0.130</td>
+<td>cuDNNv7.4.2.24 for cuda10.0</td>
+</tr>
+</tbody>
+</table>
 
       
 
@@ -620,15 +527,15 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">MachineLearning</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">advancement</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">pythpon</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">notebook</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">TensorFlow</a>
         		</li>
       		
 		</ul>
@@ -684,7 +591,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://liuqixuan.github.io/2019/03/06/Python 笔记/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://liuqixuan.github.io/2019/03/22/TensorFlow 安装总结/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -698,15 +605,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/03/09/Python 科学计算/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Python科学计算
-        
-      </div>
-    </a>
   
+    <a href="/2019/03/19/SVM 原理详解/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">SVM原理详解</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -731,7 +634,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#函数式编程"><span class="toc-number">1.</span> <span class="toc-text">函数式编程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#面向对象"><span class="toc-number">2.</span> <span class="toc-text">面向对象</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#变量"><span class="toc-number">2.1.</span> <span class="toc-text">变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建类的两种方法"><span class="toc-number">2.2.</span> <span class="toc-text">创建类的两种方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用枚举类-枚举类不可比较大小，但是同一枚举类的成员可以做等值is-not-is判断"><span class="toc-number">2.3.</span> <span class="toc-text">使用枚举类(枚举类不可比较大小，但是同一枚举类的成员可以做等值is / not is判断)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#定义枚举类"><span class="toc-number">2.4.</span> <span class="toc-text">定义枚举类</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#高级面向对象"><span class="toc-number">3.</span> <span class="toc-text">高级面向对象</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#元类types"><span class="toc-number">3.1.</span> <span class="toc-text">元类types</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#元类type构造对象"><span class="toc-number">3.2.</span> <span class="toc-text">元类type构造对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用Slot限制添加属性"><span class="toc-number">3.3.</span> <span class="toc-text">使用Slot限制添加属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#装饰器"><span class="toc-number">3.4.</span> <span class="toc-text">装饰器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#python垃圾回收机制"><span class="toc-number">3.5.</span> <span class="toc-text">python垃圾回收机制</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#python-异常（Exception）、调试（Debug）、回溯（Traceback"><span class="toc-number">4.</span> <span class="toc-text">python 异常（Exception）、调试（Debug）、回溯（Traceback)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#异常（Exception）"><span class="toc-number">4.1.</span> <span class="toc-text">异常（Exception）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#常见的异常："><span class="toc-number">4.1.1.</span> <span class="toc-text">常见的异常：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#调试（Debug）"><span class="toc-number">4.2.</span> <span class="toc-text">调试（Debug）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#单元测试"><span class="toc-number">4.2.1.</span> <span class="toc-text">单元测试</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#文档测试-doctest"><span class="toc-number">4.2.2.</span> <span class="toc-text">文档测试(doctest)</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#回溯（Traceback"><span class="toc-number">4.3.</span> <span class="toc-text">回溯（Traceback)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#with-用法"><span class="toc-number">5.</span> <span class="toc-text">with 用法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#f-string-处理-str-，-repr"><span class="toc-number">6.</span> <span class="toc-text">f_string 处理__str__，__repr__</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#TensorFlow-安装总结"><span class="toc-number">1.</span> <span class="toc-text">TensorFlow 安装总结</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#TensorFlow-简介："><span class="toc-number">1.1.</span> <span class="toc-text">TensorFlow 简介：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#并行计算框架安装："><span class="toc-number">1.2.</span> <span class="toc-text">并行计算框架安装：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装Cuda"><span class="toc-number">1.2.1.</span> <span class="toc-text">安装Cuda</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Linux"><span class="toc-number">1.2.1.1.</span> <span class="toc-text">Linux</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Mac-OS和Raspbian"><span class="toc-number">1.2.1.2.</span> <span class="toc-text">Mac OS和Raspbian</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Windows"><span class="toc-number">1.2.1.3.</span> <span class="toc-text">Windows</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装cuDNN"><span class="toc-number">1.2.2.</span> <span class="toc-text">安装cuDNN</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Linux-1"><span class="toc-number">1.2.2.1.</span> <span class="toc-text">Linux</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Windows-1"><span class="toc-number">1.2.2.2.</span> <span class="toc-text">Windows</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TensorFlow安装"><span class="toc-number">1.3.</span> <span class="toc-text">TensorFlow安装</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Linux-从源码构建"><span class="toc-number">1.3.0.1.</span> <span class="toc-text">Linux 从源码构建</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Windows-从源码构建"><span class="toc-number">1.3.0.2.</span> <span class="toc-text">Windows 从源码构建</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#使用Python自带的pip包管理工具安装"><span class="toc-number">1.3.0.3.</span> <span class="toc-text">使用Python自带的pip包管理工具安装</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#重点TensorFlow-GPU-与CUDA-及cudnn-版本参照表"><span class="toc-number">1.4.</span> <span class="toc-text">重点TensorFlow-GPU 与CUDA 及cudnn 版本参照表</span></a></li></ol>
                     </div>
                 </span>
             </div>
