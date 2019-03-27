@@ -2994,7 +2994,7 @@ pre .css~* .id, pre .id {
 	}
 
 	.tools-col {
-		left: -300px;
+		left: -324px;
 		width: 300px
 	}
 
@@ -3336,9 +3336,9 @@ pre .css~* .id, pre .id {
 		z-index: 9999
 	}
 
-	.header-menu.tools-nav ul {
+	/*.header-menu.tools-nav ul {
 		margin-right: 28px
-	}
+	}*/
 
 	.header-menu.tools-nav li, .header-menu.tools-nav ul {
 		border-color: #fff
