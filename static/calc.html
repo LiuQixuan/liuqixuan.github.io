@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcPage</title>
+    <style>
+        @font-face {
+            font-family: LedD;
+            src: url("./src/ttf/ledd.TTF");
+        }
+
+        .calc-wrap {
+            position: relative;
+        }
+
+        .calc-logo {
+            position: absolute;
+            font-size: 24px;
+            left: 40px;
+            top: 40px;
+            color: white;
+            text-shadow: #575757 5px 5px;
+        }
+
+        .calc-logo>span {
+            color: #E7C01D;
+            font-size: 12px;
+        }
+
+        .display-wrap {
+            min-width: 200px;
+            max-width: 500px;
+            padding: 100px 40px 60px;
+            border: darkgray solid 2px;
+            border-radius: 5%;
+            background: #575757;
+
+        }
+
+
+        .erro-formula,
+        .errobox {
+            color: #C60605;
+        }
+
+        .errobox {
+            font-size: 26px;
+        }
+
+        .showbox {
+            font-family: LedD;
+            font-size: 8px;
+            width: 100%;
+            height: 144px;
+            margin: 0;
+            text-align: right;
+            box-sizing: border-box;
+            background: #8CB495;
+            border-color: #443B43 #777777 #777777 #443B43;
+            border-style: solid;
+            border-width: 4px;
+
+        }
+
+        .formula-wrap {
+            position: relative;
+        }
+
+        .formula-wrap>input {
+            left: 0px;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            opacity: 0;
+        }
+
+        .formula-wrap>span {
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .formula-wrap,
+        .result-wrap {
+            height: 68px;
+            line-height: 68px;
+        }
+
+        .fontsizeX {
+            font-size: 48px;
+        }
+        
+        .fontsizeL {
+            font-size: 34px;
+        }
+
+        .fontsizeM {
+            font-size: 24px;
+        }
+
+
+        .keybox {
+            font-size: 36px;
+            font-family: Fira Code Retina, Sarasa Term SC Regular, Consolas;
+            /* font-family: Arial, Helvetica, sans-serif; */
+            margin-top: 1em;
+            padding: 0;
+        }
+
+        .keywrap {
+            width: auto;
+            height: 14em;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .keywrap .button {
+            user-select: none;
+            font-size: 1em;
+            line-height: 2em;
+            text-align: center;
+            width: 3em;
+            height: 2em;
+            background: #383838;
+            color: white;
+            border-radius: 10px;
+            border: transparent 2px solid;
+            border-color: #F3F3F3 black black black;
+
+        }
+
+        .left-keywrap>.button:first-child {
+            background: #052fc6;
+        }
+
+        #bt-shift {
+            font-size: 30px;
+            width: 108px;
+            height: 72px;
+            line-height: 72px;
+            color: #E7C01D;
+        }
+
+        #bt-ac,
+        #bt-del {
+            background: #C60605;
+        }
+
+        .keywrap .button:active {
+            border: black 2px solid;
+            background: #2b2b2b;
+            color: #d2d2d2;
+        }
+
+        .keywrap>div[class$=keywrap] {
+            display: inline-flex;
+            justify-content: space-between;
+        }
+
+        .left-keywrap {
+            width: 72.5%;
+            position: relative;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+            align-content: space-between
+        }
+
+        .right-keywrap {
+            width: 22.5%;
+            flex-direction: column;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body @keyup.native.enter=get_result>
+    <div class="wrap">
+        <div class="container">
+            <section id="calc">
+                <div class="calc-wrap">
+                    <div class="calc-logo">
+                        简易计算器©AIUSoft <span>powerby Vue</span>
+                    </div>
+                    <div class="display-wrap">
+                        <div class="showbox" :class="calc_fontsize">
+                            <div class="formula-wrap" :class="{'erro-formula':error}">
+                                <input type="text" v-show="formula_input_enable"  v-model=formula @input=fromula_input_change
+                                    @keyup.enter="get_result">
+                                <span>{{formula}}</span>
+                            </div>
+                            <div class="result-wrap">
+                                <div v-if="error" class="errobox">{{erro_info}}</div>
+                                <div v-else class="calc-result"><span></span>{{result}}</div>
+                            </div>
+                        </div>
+                        <div class="keybox">
+                            <div class="keywrap">
+                                <div class="left-keywrap">
+                                    <div class="button">+/-</div>
+                                    <div class="button" @click=add_formula>0</div>
+                                    <div class="button" @click=add_formula>.</div>
+                                    <div class="button" @click=add_formula>1</div>
+                                    <div class="button" @click=add_formula>2</div>
+                                    <div class="button" @click=add_formula>3</div>
+                                    <div class="button" @click=add_formula>4</div>
+                                    <div class="button" @click=add_formula>5</div>
+                                    <div class="button" @click=add_formula>6</div>
+                                    <div class="button" @click=add_formula>7</div>
+                                    <div class="button" @click=add_formula>8</div>
+                                    <div class="button" @click=add_formula>9</div>
+                                    <div class="button" id="bt-shift" @click=shift>Shift</div>
+                                    <div class="button" id="bt-ac" @click=ac>AC</div>
+                                    <div class="button" id="bt-del" @click=del>Del</div>
+                                </div>
+                                <div class="right-keywrap">
+                                    <div class="button" @click=add_formula>+</div>
+                                    <div class="button" @click=add_formula>-</div>
+                                    <div class="button" @click=add_formula>*</div>
+                                    <div class="button" @click=add_formula>/</div>
+                                    <div class="button" @click=get_result>=</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script>
+        let app = new Vue({
+            el: "#calc",
+            data: {
+                formula: '',
+                result: 0,
+                error: false,
+                formula_index: 0,
+                erro_info: '',
+                calc_fontsize: "fontsizeX",
+                formula_input_enable:true,
+            },
+            methods: {
+                add_formula(e) {
+                    console.log(this.formula.slice(0, this.formula_index), this.formula.slice(this.formula_index));
+                    this.formula = this.formula.slice(0, this.formula_index) + e.target.textContent + this.formula.slice(this.formula_index);
+                    this.formula_index++;
+                    console.log(this.formula_index);
+                },
+                get_result() {
+                    this.formula_index = this.formula.length;
+                    this.result = this.last_result;
+                },
+                del() {
+                    var tmp_str = this.formula;
+                    this.formula_index--;
+                    this.formula = tmp_str.substring(0, this.formula_index);
+                    this.formula_input_enable = true;
+                },
+                ac() {
+                    this.formula_index = 0;
+                    this.formula = '';
+                    this.error = false
+                    this.formula_input_enable = true;
+                },
+                shift() {
+                    let tmp_elem = document.querySelector(".left-keywrap>.button:first-child");
+                    if (tmp_elem.textContent === "+/-") {
+                        tmp_elem.textContent = "()";
+                        tmp_elem.onclick = this.add_formula;
+                        console.log(">>>", "+/-");
+                    } else {
+                        tmp_elem.textContent = "+/-";
+                        tmp_elem.onclick = this.turnflag;
+                        console.log(">>>", "\(\)");
+                    }
+                },
+                turnflag() {
+                    if (this.formula === '') { this.formula = '0' }
+                    this.formula = "-(" + this.formula + ")";
+                },
+                fromula_input_change(){
+                    this.formula_index = this.formula.length;
+                }
+            },
+            mounted: function () {
+                document.querySelector(".left-keywrap>.button:first-child").onclick = this.turnflag;
+            },
+            beforeUpdate: function () {
+                if (this.formula.length < 15) {
+                    this.calc_fontsize = "fontsizeX";
+                } else if (this.formula.length > 14 && this.formula.length < 21) {
+                    this.calc_fontsize = "fontsizeL";
+                } else if (this.formula.length > 20&&this.formula.length <29) {
+                    this.calc_fontsize = "fontsizeM";
+                } else{
+                    this.error = true;
+                    this.erro_info = "错误：超过最大计算数位";
+                    this.formula_input_enable = false;
+                }
+            },
+            computed: {
+                last_result() {
+                    let tmp_v = 0;
+                    this.error = false
+                    try {
+                        tmp_v = eval(this.formula)
+                    } catch (e) {
+                        this.error = true;
+                        this.erro_info = "错误：算术表达式不正确";
+                    } finally {
+                        return tmp_v;
+                    }
+                },
+            }
+
+        });
+
+    </script>
+</body>
+
+</html>
