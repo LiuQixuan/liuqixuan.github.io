@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DigitalClock</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .main-wrap {
+            /* max-width: 1440px;
+            width: 80%; */
+            min-width: 500px;
+            height: 100vh;
+            margin: 0 auto;
+            text-align: center;
+            color: aliceblue;
+        }
+
+        .clock-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #040615;
+        }
+
+        .clock-contain {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            width: 500px;
+            height: 100vh;
+            min-height: 750px;
+        }
+        .clock-main{
+            display: flex;
+            flex-direction: column;
+        }
+        .component-title{
+            font-size: 2em;
+        }
+        .clock {
+            width: 400px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-style: preserve-3d;
+            perspective: 300px;
+
+        }
+
+        .clock::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            border: rgb(221, 222, 223) 8px solid;
+            border-radius: 50%;
+            filter: blur(1px);
+        }
+
+        .dial {
+            width: 90%;
+            height: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateZ(40px);
+            position: relative;
+        }
+
+        .dial-el,
+        .dial-text {
+            position: absolute;
+            width: 85%;
+            height: 85%;
+        }
+
+        .dial-el {
+            border: 2px white solid;
+            border-radius: 50%;
+        }
+
+        .dial-el:nth-child(1) {
+            clip-path: polygon(0% 0%, 45% 0%, 45% 45%, 0% 45%);
+        }
+
+        .dial-el:nth-child(2) {
+            clip-path: polygon(55% 0, 100% 0, 100% 45%, 55% 45%);
+        }
+
+        .dial-el:nth-child(3) {
+            clip-path: polygon(0 55%, 45% 55%, 45% 100%, 0 100%);
+        }
+
+        .dial-el:nth-child(4) {
+            clip-path: polygon(55% 55%, 100% 55%, 100% 100%, 55% 100%);
+        }
+
+        .dial-text {
+            width: 90%;
+            height: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            font-size: 2em;
+            line-height: 0.5em;
+        }
+
+        .dial-text-wrap-col,
+        .dial-text-wrap-row {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .dial-text-wrap-col>div::before,
+        .dial-text-wrap-row>div::before {
+            content: attr(data-text);
+            display: inline-block;
+        }
+
+        .dial-text-wrap-col {
+            flex-direction: column;
+        }
+
+        .dial-text-wrap-row {
+            flex-direction: row;
+        }
+
+        .dial-text>span:nth-child(1) {
+            right: 0;
+        }
+
+        .dial-text>span:nth-child(2) {
+            bottom: 0;
+        }
+
+        .dial-text>span:nth-child(3) {
+            left: 0;
+        }
+
+        .dial-text>span:nth-child(4) {
+            top: 0;
+        }
+
+        .hour,
+        .min,
+        .sec {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.5px linear;
+        }
+
+        .hour {
+            transform: translateZ(60px);
+        }
+
+        .hour::after {
+            content: '';
+            width: 10px;
+            height: 10px;
+            border: 5px white solid;
+            border-radius: 50%;
+            /* z-index: ; */
+        }
+
+        .min {
+            transform: translateZ(70px);
+        }
+
+        .min::after {
+            content: '';
+            width: 10px;
+            height: 10px;
+            border: 5px white solid;
+            border-radius: 50%;
+            /* z-index: ; */
+        }
+
+        .sec {
+            transform: translateZ(80px);
+        }
+
+        .sec::after {
+            content: '';
+            width: 15px;
+            height: 15px;
+            background-color: #2196f3;
+            border-radius: 50%;
+            /* z-index: 99; */
+        }
+
+        .hour,
+        .hr {
+            width: 200px;
+            height: 200px;
+        }
+
+        .min,
+        .mn {
+            width: 220px;
+            height: 220px;
+        }
+
+        .sec,
+        .sc {
+            width: 240px;
+            height: 240px;
+        }
+
+        .hr,
+        .mn,
+        .sc {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            transition: transfrom 2s linear;
+        }
+
+        .hr::before {
+            content: '';
+            background-color: white;
+            width: 8px;
+            height: 100px;
+            border-radius: 50% 50% 0 0/4px 4px 0 0;
+        }
+
+        .mn::before {
+            content: '';
+            background-color: white;
+            width: 4px;
+            height: 110px;
+        }
+
+        .sc::before {
+            content: '';
+            background-color: #2196f3;
+            width: 2px;
+            height: 120px;
+        }
+        .digitalClock{
+            margin-top: 1em;
+            font-size: 5em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-wrap">
+        <div class="clock-wrap">
+            <div class="clock-contain">
+                <div class="component-title">
+                    <h1>JS Clock Demo</h1>
+                </div>
+                <div class="clock-main">
+                    <div class="clock">
+                        <div class="dial">
+                            <div class="dial-el"></div>
+                            <div class="dial-el"></div>
+                            <div class="dial-el"></div>
+                            <div class="dial-el"></div>
+                            <div class="dial-text">
+                                <div class="dial-text-wrap-col">
+                                    <div data-text="12"></div>
+                                    <div data-text="6"></div>
+                                </div>
+                                <div class="dial-text-wrap-row">
+                                    <div data-text="9"></div>
+                                    <div data-text="3"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hour">
+                            <div class="hr" id="hr"></div>
+                        </div>
+                        <div class="min">
+                            <div class="mn" id="mn"></div>
+                        </div>
+                        <div class="sec">
+                            <div class="sc" id="sc"></div>
+                        </div>
+                        <div class="clock-view-control"></div>
+                    </div>
+                    <div class="digitalClock">
+                        <span></span>:<span></span>:<span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const print = console.log;
+    const hrHand = document.querySelector('.hr');
+    const mnHand = document.querySelector('.mn');
+    const scHand = document.querySelector('.sc');
+    const clockHand = document.querySelector('.clock');
+    const viewChangeHand = document.querySelector('.clock-view-control');
+    const hrOffset = 360 / 12;
+    const mnOffset = (scOffset = 360 / 60);
+    const dgtClockHand = document.querySelectorAll(".digitalClock>span")
+    function update() {
+        let dd = new Date();
+        let hr = dd.getHours();
+        let mn = dd.getMinutes();
+        let sc = dd.getSeconds();
+        hrHand.style.transform = `rotateZ(${hr * hrOffset}deg)`;
+        mnHand.style.transform = `rotateZ(${mn * mnOffset}deg)`;
+        scHand.style.transform = `rotateZ(${sc * scOffset}deg)`;
+        dgtClockHand[0].innerText = hr>9?hr:'0'+hr;
+        dgtClockHand[1].innerText = mn>9?mn:'0'+mn;
+        dgtClockHand[2].innerText = sc>9?sc:'0'+sc;
+    }
+    function change3DViewByMouseMove(event) {
+        let mouseX =
+            event.pageX -
+            (document.body.clientWidth - clockHand.offsetWidth) / 2;
+        let mouseY =
+            event.pageY - clockHand.offsetTop;
+        const handOffsetWidth = clockHand.offsetWidth / 2;
+        const handOffsetHeight = clockHand.offsetHeight / 2;
+        let diffX =
+            mouseY > handOffsetHeight
+                ? mouseY - handOffsetHeight
+                : mouseY - handOffsetHeight;
+        let diffY =
+            mouseX > handOffsetWidth
+                ? mouseX - handOffsetWidth
+                : mouseX - handOffsetWidth;
+        diffX = -diffX;
+        let distant = Math.round(0.16 * Math.hypot(diffX, diffY));
+
+        // print( [diffX, diffY, Math.hypot(diffX, diffY), distant].join(' ') );
+        clockHand.style.transform = `rotate3d(${diffX},${diffY},0,${distant}deg)`;
+    }
+    function change3DViewByDeviceOrientation(event) {
+        if (typeof this.oldOrientationBeta == "undefined") {
+            this.oldOrientationBeta = event.beta;
+        }
+        if (typeof this.oldOrientationGamma == "undefined") {
+            this.oldOrientationGamma = event.gamma;
+        }
+        let diffX = oldOrientationBeta - event.beta;
+        let diffY = event.gamma - oldOrientationGamma;
+        let distant = Math.round(45 / 35.36 * Math.hypot(diffX, diffY));
+        clockHand.style.transform = `rotate3d(${diffX},${diffY},0,${distant}deg)`;
+    }
+    function change3DViewByTouchMove(event) {
+        event.preventDefault();
+        let touchX =
+            event.touches[0].pageX -
+            (document.body.clientWidth - clockHand.offsetWidth) / 2;
+        let touchY =
+            event.touches[0].pageY - clockHand.offsetTop;
+        const handOffsetWidth = clockHand.offsetWidth / 2;
+        const handOffsetHeight = clockHand.offsetHeight / 2;
+        let diffX =
+            touchY > handOffsetHeight
+                ? touchY - handOffsetHeight
+                : touchY - handOffsetHeight;
+        let diffY =
+            touchX > handOffsetWidth
+                ? touchX - handOffsetWidth
+                : touchX - handOffsetWidth;
+        diffX = -diffX;
+        let distant = Math.round(0.16 * Math.hypot(diffX, diffY));
+
+        // print( [diffX, diffY, Math.hypot(diffX, diffY), distant].join(' ') );
+        clockHand.style.transform = `rotate3d(${diffX},${diffY},0,${distant}deg)`;
+    }
+    window.onload = () => {
+        clockHand.addEventListener('mousemove', change3DViewByMouseMove);
+        clockHand.addEventListener('mouseout', (e) => {
+            clockHand.style.transform = '';
+        });
+        if (window.DeviceOrientationEvent) {
+            window.addEventListener('deviceorientation', change3DViewByDeviceOrientation);
+        }
+        if (window.TouchEvent) {
+            clockHand.addEventListener("touchmove", change3DViewByTouchMove, { passive: false });
+            clockHand.addEventListener("touchend", (e) => { clockHand.style.transform = ''; }, { passive: false })
+        }
+        setInterval(update, 1000);
+    };
+</script>
+
+</html>
